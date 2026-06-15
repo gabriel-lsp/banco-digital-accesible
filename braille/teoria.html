@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conoce el sistema Braille</title>
+
+  <style>
+    :root{
+      --azul:#0f5f8f;
+      --azul-oscuro:#0b3f63;
+      --celeste:#eaf6fb;
+      --fondo:#f4f7fb;
+      --texto:#1f2933;
+      --texto-suave:#52616b;
+      --blanco:#ffffff;
+      --borde:#d9e4ec;
+      --sombra:0 12px 30px rgba(31,41,51,.08);
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--fondo);
+      color:var(--texto);
+      line-height:1.7;
+    }
+
+    .pagina{
+      max-width:1100px;
+      margin:0 auto;
+      padding:28px 18px 50px;
+    }
+
+    .cabecera{
+      background:var(--blanco);
+      border-radius:24px;
+      padding:34px 26px;
+      box-shadow:var(--sombra);
+      text-align:center;
+      margin-bottom:22px;
+    }
+
+    .etiqueta{
+      margin:0 0 10px;
+      color:var(--azul);
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      font-size:.86rem;
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size:clamp(2rem, 4vw, 3rem);
+      color:var(--azul-oscuro);
+      line-height:1.15;
+    }
+
+    .descripcion{
+      max-width:820px;
+      margin:0 auto;
+      color:var(--texto-suave);
+      font-size:1.05rem;
+    }
+
+    .menu{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin:22px 0 0;
+    }
+
+    .menu a,
+    .boton{
+      display:inline-block;
+      text-decoration:none;
+      background:var(--azul);
+      color:var(--blanco);
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:.95rem;
+      transition:.2s ease;
+    }
+
+    .menu a:hover,
+    .boton:hover{
+      background:var(--azul-oscuro);
+      transform:translateY(-1px);
+    }
+
+    .contenido{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+
+    .tarjeta{
+      background:var(--blanco);
+      border:1px solid var(--borde);
+      border-radius:22px;
+      padding:26px;
+      box-shadow:0 8px 22px rgba(31,41,51,.05);
+    }
+
+    h2{
+      margin:0 0 12px;
+      color:var(--azul-oscuro);
+      font-size:1.55rem;
+      line-height:1.25;
+    }
+
+    h3{
+      margin:22px 0 8px;
+      color:var(--azul);
+      font-size:1.15rem;
+    }
+
+    p{
+      margin:0 0 14px;
+    }
+
+    ul{
+      margin:10px 0 0;
+      padding-left:22px;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    .nota{
+      background:var(--celeste);
+      border-left:5px solid var(--azul);
+      padding:16px 18px;
+      border-radius:14px;
+      margin-top:16px;
+      color:var(--azul-oscuro);
+    }
+
+    .braille-demo{
+      display:grid;
+      grid-template-columns:repeat(2, 54px);
+      grid-template-rows:repeat(3, 54px);
+      gap:12px; 18px;
+      justify-content:center;
+      margin:20px auto;
+      max-width:150px;
+    }
+
+    .punto{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      border:2px solid var(--azul);
+      background:var(--celeste);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--azul-oscuro);
+    }
+
+    .punto.activo{
+      background:var(--azul);
+      color:var(--blanco);
+    }
+
+    .tabla-simple{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:14px;
+      overflow:hidden;
+      border-radius:14px;
+      background:var(--blanco);
+    }
+
+    .tabla-simple th,
+    .tabla-simple td{
+      border:1px solid var(--borde);
+      padding:12px;
+      text-align:left;
+      vertical-align:top;
+    }
+
+    .tabla-simple th{
+      background:var(--celeste);
+      color:var(--azul-oscuro);
+    }
+
+    .volver{
+      text-align:center;
+      margin-top:24px;
+    }
+
+    .pie{
+      text-align:center;
+      color:var(--texto-suave);
+      font-size:.92rem;
+      margin-top:26px;
+      padding:12px;
+    }
+
+    @media (max-width:700px){
+      .cabecera{
+        padding:28px 18px;
+      }
+
+      .tarjeta{
+        padding:22px 18px;
+      }
+
+      .menu{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .menu a,
+      .boton{
+        text-align:center;
+      }
+
+      .tabla-simple{
+        font-size:.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="pagina">
+
+    <header class="cabecera">
+      <p class="etiqueta">Recurso educativo accesible</p>
+      <h1>Conoce el sistema Braille</h1>
+      <p class="descripcion">
+        El sistema Braille es una forma de lectura y escritura táctil que permite a las personas con discapacidad visual acceder a la información, comunicarse, aprender y participar con mayor autonomía en distintos espacios educativos y sociales.
+      </p>
+
+      <nav class="menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="#que-es">Qué es</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#educacion">Uso educativo</a>
+        <a href="#orientaciones">Orientaciones</a>
+      </nav>
+    </header>
+
+    <section class="contenido">
+
+      <article class="tarjeta" id="que-es">
+        <h2>¿Qué es el sistema Braille?</h2>
+        <p>
+          El Braille es un sistema de lectura y escritura basado en puntos en relieve. Estos puntos se perciben con el tacto, principalmente con las yemas de los dedos. Gracias a este sistema, una persona con discapacidad visual puede leer letras, números, signos de puntuación, palabras, frases y textos completos.
+        </p>
+        <p>
+          No se trata de un idioma diferente. El Braille es un código. Esto significa que puede representar distintos idiomas, como el español, el inglés, el quechua u otros, según las reglas que se utilicen. Por ejemplo, una palabra escrita en español puede representarse en Braille manteniendo su significado original, pero usando combinaciones de puntos.
+        </p>
+        <p>
+          Su valor educativo es muy importante porque permite que el estudiante acceda a la lectura y la escritura de manera directa. No depende únicamente de escuchar información, sino que puede explorar, leer, revisar, corregir y producir textos usando sus propias manos.
+        </p>
+
+        <div class="nota">
+          El Braille no reemplaza la voz, los audios ni la tecnología. Los complementa. Su propósito es fortalecer la autonomía, la alfabetización y el acceso real a la información escrita.
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Breve historia del Braille</h2>
+        <p>
+          El sistema Braille fue creado por Louis Braille, una persona francesa que perdió la visión durante su infancia. Desde muy joven buscó una forma más práctica para que las personas ciegas pudieran leer y escribir. A partir de sistemas táctiles anteriores, organizó una propuesta más sencilla, ordenada y funcional.
+        </p>
+        <p>
+          Su aporte fue usar una celda de seis puntos. Con esos seis puntos se podían formar distintas combinaciones para representar letras, números y signos. Esta idea permitió que la lectura táctil fuera más rápida, clara y accesible.
+        </p>
+        <p>
+          Con el tiempo, el Braille se difundió en muchos países y fue adaptándose a diferentes lenguas y necesidades. Hoy se usa en libros, materiales educativos, señalización, ascensores, medicamentos, documentos, tecnología y recursos de apoyo para la inclusión.
+        </p>
+      </article>
+
+      <article class="tarjeta" id="como-funciona">
+        <h2>¿Cómo funciona la celda Braille?</h2>
+        <p>
+          La base del sistema es la celda Braille. Esta celda está formada por seis puntos distribuidos en dos columnas y tres filas. Cada punto tiene una posición específica y se numera del 1 al 6.
+        </p>
+
+        <div class="braille-demo" aria-label="Representación de los seis puntos Braille">
+          <div class="punto">1</div>
+          <div class="punto">4</div>
+          <div class="punto">2</div>
+          <div class="punto">5</div>
+          <div class="punto">3</div>
+          <div class="punto">6</div>
+        </div>
+
+        <p>
+          La columna izquierda contiene los puntos 1, 2 y 3. La columna derecha contiene los puntos 4, 5 y 6. Al combinar algunos de estos puntos, se forman las letras, los números y otros signos.
+        </p>
+
+        <table class="tabla-simple">
+          <thead>
+            <tr>
+              <th>Elemento</th>
+              <th>Explicación sencilla</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Celda Braille</td>
+              <td>Es el espacio básico donde se organizan los seis puntos.</td>
+            </tr>
+            <tr>
+              <td>Puntos en relieve</td>
+              <td>Son pequeños puntos que se pueden sentir con los dedos.</td>
+            </tr>
+            <tr>
+              <td>Combinación</td>
+              <td>Es la forma en que se activan algunos puntos para crear un signo.</td>
+            </tr>
+            <tr>
+              <td>Lectura táctil</td>
+              <td>Es la lectura que se realiza mediante el tacto, no mediante la vista.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="nota">
+          Para aprender Braille no basta con memorizar puntos. También se necesita práctica táctil, orientación, acompañamiento pedagógico y materiales adecuados.
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Letras, números y signos</h2>
+        <p>
+          En Braille, cada letra se representa mediante una combinación específica de puntos. Las primeras letras del alfabeto son especialmente importantes porque sirven como base para comprender otras combinaciones.
+        </p>
+        <p>
+          Los números también se representan en Braille, pero normalmente requieren un signo previo que indica que lo que sigue debe leerse como número. Por ejemplo, una misma combinación puede tener un valor como letra o como número, dependiendo del signo que la antecede.
+        </p>
+        <p>
+          También existen signos para la puntuación, las vocales acentuadas, las mayúsculas y otros usos específicos. Esto permite escribir frases completas, textos escolares, indicaciones, nombres, fechas y contenidos de distintas áreas curriculares.
+        </p>
+
+        <h3>Ejemplo práctico</h3>
+        <p>
+          Si una persona escribe una palabra en tinta, como "casa", esa palabra puede representarse en Braille usando una celda para cada letra. Así, el estudiante puede leer la palabra letra por letra mediante el tacto.
+        </p>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Lectura y escritura en Braille</h2>
+        <p>
+          La lectura en Braille se realiza pasando los dedos sobre los puntos en relieve. Generalmente se usan ambas manos, aunque cada persona puede desarrollar su propio ritmo. La lectura requiere sensibilidad táctil, memoria, coordinación y práctica constante.
+        </p>
+        <p>
+          La escritura puede realizarse de varias maneras. Una forma tradicional es usar la regleta y el punzón. También se puede emplear una máquina Perkins, impresoras Braille o dispositivos electrónicos especializados.
+        </p>
+        <p>
+          En la escritura con regleta y punzón, la persona marca los puntos sobre el papel. Luego, al voltear la hoja, los puntos quedan en relieve y pueden ser leídos con los dedos. Este proceso requiere orientación, paciencia y entrenamiento progresivo.
+        </p>
+      </article>
+
+      <article class="tarjeta" id="educacion">
+        <h2>Importancia del Braille en la educación</h2>
+        <p>
+          El Braille es una herramienta clave para la inclusión educativa de estudiantes con discapacidad visual. Su enseñanza favorece el acceso a la lectura, la escritura, la comprensión de textos y la participación en actividades escolares.
+        </p>
+        <p>
+          Cuando un estudiante aprende Braille, no solo aprende un código. También desarrolla autonomía para revisar sus propios escritos, reconocer palabras, organizar información, tomar apuntes, leer indicaciones y participar en tareas académicas.
+        </p>
+        <p>
+          En el contexto escolar, el Braille puede usarse en carteles, fichas, etiquetas, cuentos, materiales adaptados, actividades de reconocimiento, juegos de asociación y recursos para el aprendizaje inicial.
+        </p>
+
+        <div class="nota">
+          La inclusión no consiste únicamente en que el estudiante esté presente en el aula. También implica que pueda acceder a los contenidos, participar en las actividades y contar con apoyos adecuados.
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <h2>¿Quiénes pueden aprender Braille?</h2>
+        <p>
+          El Braille puede ser aprendido por personas con ceguera, baja visión severa o dificultades visuales que limitan el acceso funcional a la lectura impresa. También puede ser aprendido por docentes, familias, compañeros de aula y profesionales que brindan apoyo educativo.
+        </p>
+        <p>
+          Cuando la familia y la escuela conocen el sistema Braille, el acompañamiento mejora. El estudiante recibe más oportunidades para practicar, reconocer signos y usar el sistema en situaciones reales.
+        </p>
+        <p>
+          No todos los estudiantes con discapacidad visual usarán Braille de la misma manera. Algunos lo emplearán como sistema principal de lectura y escritura. Otros lo combinarán con macrotipo, audiolibros, lectores de pantalla, recursos táctiles o apoyos tecnológicos.
+        </p>
+      </article>
+
+      <article class="tarjeta" id="orientaciones">
+        <h2>Orientaciones para docentes y familias</h2>
+        <p>
+          El aprendizaje del Braille debe ser gradual. Primero se puede trabajar la exploración táctil, la orientación espacial, la discriminación de texturas, la ubicación de puntos y el reconocimiento de formas simples. Luego se introducen letras, números, palabras y frases.
+        </p>
+
+        <h3>Para docentes</h3>
+        <ul>
+          <li>Presentar el Braille como una forma válida de lectura y escritura, no como una actividad aislada.</li>
+          <li>Usar materiales claros, ordenados y con suficiente espacio entre elementos.</li>
+          <li>Evitar sobrecargar al estudiante con demasiados signos en una sola actividad.</li>
+          <li>Relacionar el Braille con palabras reales, objetos del aula y situaciones cotidianas.</li>
+          <li>Coordinar con la familia para reforzar el aprendizaje en casa.</li>
+        </ul>
+
+        <h3>Para familias</h3>
+        <ul>
+          <li>Acompañar con paciencia, sin presionar al estudiante.</li>
+          <li>Reconocer sus avances, aunque sean pequeños.</li>
+          <li>Usar etiquetas simples en objetos del hogar cuando sea pertinente.</li>
+          <li>Promover la autonomía en actividades diarias.</li>
+          <li>Consultar con especialistas cuando existan dudas sobre el proceso de aprendizaje.</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Ideas equivocadas sobre el Braille</h2>
+        <p>
+          A veces se piensa que el Braille es muy difícil o que solo sirve para personas adultas. En realidad, puede aprenderse de manera progresiva desde edades tempranas, siempre que se respeten los ritmos y necesidades de cada estudiante.
+        </p>
+
+        <table class="tabla-simple">
+          <thead>
+            <tr>
+              <th>Idea equivocada</th>
+              <th>Una mirada más adecuada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"El Braille es un idioma".</td>
+              <td>El Braille es un sistema de lectura y escritura. Puede representar distintos idiomas.</td>
+            </tr>
+            <tr>
+              <td>"Solo sirve para leer libros".</td>
+              <td>También se usa en etiquetas, señalización, materiales escolares y tecnología.</td>
+            </tr>
+            <tr>
+              <td>"La tecnología reemplaza al Braille".</td>
+              <td>La tecnología ayuda, pero el Braille sigue siendo importante para la alfabetización.</td>
+            </tr>
+            <tr>
+              <td>"Aprender Braille es imposible".</td>
+              <td>Requiere práctica y acompañamiento, pero puede aprenderse paso a paso.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Cómo usar esta plataforma</h2>
+        <p>
+          Esta plataforma permite explorar signos Braille de manera sencilla. El usuario puede revisar letras, números, signos básicos, vocales acentuadas y palabras básicas. También puede usar la búsqueda para ubicar un contenido específico.
+        </p>
+        <p>
+          La intención del recurso no es reemplazar la enseñanza directa del Braille, sino ofrecer un apoyo visual y pedagógico para docentes, familias, estudiantes y profesionales vinculados a la educación inclusiva.
+        </p>
+        <p>
+          Puede utilizarse como material de consulta, apoyo para sesiones educativas, introducción al sistema Braille o recurso complementario durante actividades de sensibilización.
+        </p>
+
+        <div class="nota">
+          Para una enseñanza formal del Braille, se recomienda contar con orientación especializada y materiales táctiles reales, ya que la práctica con puntos en relieve es fundamental.
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <h2>Cierre</h2>
+        <p>
+          El sistema Braille representa una oportunidad para fortalecer la autonomía, la comunicación y el acceso a la educación. Su aprendizaje abre caminos para que las personas con discapacidad visual participen con mayor independencia en la escuela, la familia y la comunidad.
+        </p>
+        <p>
+          Conocer el Braille también ayuda a construir una mirada más inclusiva. Cuando docentes, familias y estudiantes comprenden su valor, se generan mejores condiciones para acompañar los procesos de aprendizaje y participación.
+        </p>
+      </article>
+
+    </section>
+
+    <div class="volver">
+      <a class="boton" href="index.html">← Volver al inicio</a>
+    </div>
+
+    <footer class="pie">
+      <p>
+        Recurso educativo sobre el sistema Braille. Elaborado con fines pedagógicos para fortalecer la accesibilidad y la inclusión educativa.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
