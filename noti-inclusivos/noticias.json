@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Primera Capacitación Virtual CREBE 2026",
+    "categoria": "Capacitaciones",
+    "fecha": "2026",
+    "resumen": "Espacio informativo para comunicar capacitaciones virtuales, temas de formación y enlaces de acceso dirigidos a docentes, familias y comunidad educativa.",
+    "enlace": "https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/"
+  },
+  {
+    "titulo": "Banco Digital Accesible",
+    "categoria": "Recursos digitales",
+    "fecha": "2026",
+    "resumen": "Acceso organizado a recursos de Lengua de Señas Peruana y sistema Braille para fortalecer la consulta educativa y el apoyo a la inclusión.",
+    "enlace": "../index.html"
+  },
+  {
+    "titulo": "Materiales Educativos Accesibles",
+    "categoria": "Materiales",
+    "fecha": "2026",
+    "resumen": "Módulo orientado a reunir materiales visuales, rutinas, pictogramas, generadores y apoyos para docentes y familias.",
+    "enlace": "https://gabriel-lsp.github.io/materiales-educativos-accesibles/"
+  },
+  {
+    "titulo": "Juegos Educativos Accesibles",
+    "categoria": "Juegos",
+    "fecha": "2026",
+    "resumen": "Espacio para actividades interactivas que favorecen el aprendizaje mediante recursos lúdicos, visuales y accesibles.",
+    "enlace": "https://gabriel-lsp.github.io/juegos-interactivos-accesibles/"
+  },
+  {
+    "titulo": "Orientaciones para el uso de recursos inclusivos",
+    "categoria": "Orientaciones",
+    "fecha": "2026",
+    "resumen": "Recomendaciones breves para seleccionar recursos digitales considerando accesibilidad, claridad visual, acompañamiento pedagógico y necesidades del estudiante.",
+    "enlace": "#"
+  }
+]
