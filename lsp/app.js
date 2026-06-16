@@ -34,6 +34,7 @@ const elementos = {
 
 let banco = [];
 let resultadosActuales = [];
+let vistaInicialAleatoria = [];
 let cantidadVisible = LIMITE_INICIAL;
 let secuenciaActiva = "";
 
@@ -53,6 +54,19 @@ function formatearCategoria(categoria) {
     .replace(/\s+/g, " ")
     .trim()
     .replace(/\b\w/g, (letra) => letra.toLocaleUpperCase("es"));
+}
+
+function mezclarResultados(lista) {
+  return [...lista]
+    .map((item) => ({ item, orden: Math.random() }))
+    .sort((a, b) => a.orden - b.orden)
+    .map(({ item }) => item);
+}
+
+function generarVistaInicialAleatoria() {
+  vistaInicialAleatoria = mezclarResultados(
+    banco.filter((item) => !esSecuencia(item))
+  );
 }
 
 function obtenerCategoriaNormalizada(item) {
@@ -138,6 +152,11 @@ function actualizarPestanasSecuencia() {
 function obtenerResultados() {
   const consulta = normalizarTexto(elementos.busqueda.value);
   const categoriaSeleccionada = elementos.categoria.value;
+  const esVistaInicial = consulta === "" && categoriaSeleccionada === "" && secuenciaActiva === "";
+
+  if (esVistaInicial) {
+    return vistaInicialAleatoria;
+  }
 
   const resultados = banco.filter((item) => {
     const coincideBusqueda =
@@ -263,6 +282,7 @@ function limpiarBusqueda() {
   secuenciaActiva = "";
   cantidadVisible = LIMITE_INICIAL;
 
+  generarVistaInicialAleatoria();
   actualizarPestanasSecuencia();
   renderizar();
   elementos.busqueda.focus();
@@ -307,6 +327,7 @@ async function cargarBanco() {
 
     banco = await cargarJsonDesdeRutas();
 
+    generarVistaInicialAleatoria();
     cargarCategorias();
     actualizarPestanasSecuencia();
     renderizar();
