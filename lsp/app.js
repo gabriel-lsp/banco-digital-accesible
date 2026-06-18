@@ -1,6 +1,7 @@
 "use strict";
 
 const LIMITE_INICIAL = 8;
+const BASE_RECURSOS_LSP = "https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/";
 
 const SECUENCIAS = [
   "ave maria",
@@ -10,12 +11,12 @@ const SECUENCIAS = [
 
 const NOMBRES_SECUENCIAS = {
   "ave maria": "Ave María",
-  "himno nacional": "Himno Nacional"
   "padre nuestro": "Padre Nuestro",
+  "himno nacional": "Himno Nacional"
 };
 
 const RUTAS_DICCIONARIO = [
-  "https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/datos/diccionario_lsp.json"
+  `${BASE_RECURSOS_LSP}datos/diccionario_lsp.json`
 ];
 
 const elementos = {
@@ -123,6 +124,20 @@ function ordenarPorImagen(lista) {
   });
 }
 
+function obtenerRutaImagen(ruta) {
+  const rutaLimpia = String(ruta || "").trim();
+
+  if (!rutaLimpia) {
+    return "";
+  }
+
+  if (/^https?:\/\//i.test(rutaLimpia)) {
+    return rutaLimpia;
+  }
+
+  return `${BASE_RECURSOS_LSP}${rutaLimpia.replace(/^\.\//, "")}`;
+}
+
 function obtenerCategorias() {
   const categorias = banco
     .filter((item) => !esSecuencia(item))
@@ -204,7 +219,7 @@ function crearTarjeta(item) {
   const descripcion = tarjeta.querySelector(".descripcion-tarjeta");
   const fuente = tarjeta.querySelector(".fuente-tarjeta");
 
-  imagen.src = item.archivo_imagen;
+  imagen.src = obtenerRutaImagen(item.archivo_imagen);
   imagen.alt = item.palabra
     ? `Representación visual de ${item.palabra} en Lengua de Señas Peruana`
     : "Representación visual en Lengua de Señas Peruana";
