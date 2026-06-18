@@ -1,8 +1,8 @@
 # Banco Digital Accesible
 
-Banco Digital Accesible es una plataforma educativa digital orientada a integrar recursos accesibles para la inclusión educativa, incluyendo Lengua de Señas Peruana, sistema Braille y materiales de apoyo pedagógico para docentes, familias, estudiantes y comunidad educativa.
+Banco Digital Accesible es una plataforma educativa digital que desarrollo como proyecto personal para integrar y organizar recursos accesibles vinculados a inclusión educativa, Lengua de Señas Peruana, sistema Braille, materiales de apoyo pedagógico y herramientas digitales para la atención a la diversidad.
 
-El proyecto busca organizar distintos recursos en un solo espacio de consulta, facilitando el acceso a materiales visuales, orientaciones básicas y herramientas digitales que apoyen la atención a la diversidad.
+El proyecto busca reunir distintos recursos en un solo espacio de consulta, facilitando el acceso a materiales visuales, orientaciones básicas y herramientas que puedan apoyar a docentes, familias, estudiantes y personas interesadas en educación inclusiva.
 
 ## Finalidad del proyecto
 
@@ -10,7 +10,7 @@ La finalidad principal del Banco Digital Accesible es reunir y organizar recurso
 
 El proyecto puede funcionar como plataforma integradora para enlazar o presentar bancos específicos, como el Banco Digital de Lengua de Señas Peruana, el Banco Digital del Sistema Braille, materiales educativos accesibles, juegos interactivos y recursos complementarios.
 
-Este recurso tiene finalidad educativa, accesible y no comercial. No reemplaza la intervención profesional, la planificación docente, la enseñanza especializada ni los ajustes razonables que cada estudiante pueda requerir. Debe entenderse como una herramienta de apoyo pedagógico e institucional.
+Este recurso tiene finalidad educativa, accesible y no comercial. No reemplaza la intervención profesional, la planificación docente, la enseñanza especializada ni los ajustes razonables que cada estudiante pueda requerir. Debe entenderse como una herramienta personal de apoyo pedagógico y organización digital.
 
 ## Público al que se dirige
 
@@ -51,12 +51,12 @@ banco-digital-accesible/
     ├── alcance-pedagogico.md
     ├── fuentes-y-creditos.md
     ├── uso-permitido.md
-    ├── respaldo-institucional.md
+    ├── autoria-y-contexto.md
     ├── estructura-del-proyecto.md
     └── bitacora-de-cambios.md
 ```
 
-La estructura puede ajustarse según el crecimiento del proyecto. La carpeta `docs` reúne documentos de respaldo pedagógico, autoral, institucional y organizativo.
+La estructura puede ajustarse según el crecimiento del proyecto. La carpeta `docs` reúne documentos de respaldo pedagógico, autoral, técnico y organizativo.
 
 ## Alcance pedagógico
 
@@ -66,19 +66,19 @@ Los materiales integrados no sustituyen la evaluación psicopedagógica, la inte
 
 ## Autoría y desarrollo
 
-Proyecto desarrollado y organizado por Gabriel Berrospi como recurso educativo digital orientado a la accesibilidad, la inclusión educativa y el fortalecimiento de materiales pedagógicos para la atención a la diversidad.
+Proyecto desarrollado y organizado por Gabriel Berrospi como recurso educativo digital personal orientado a la accesibilidad, la inclusión educativa y el fortalecimiento de materiales pedagógicos para la atención a la diversidad.
 
-El recurso puede vincularse al apoyo institucional del CREBE "Señor de los Milagros" - Ucayali cuando su uso sea coordinado dentro de acciones educativas, formativas o de orientación a la comunidad.
+Cuando el recurso sea utilizado dentro de acciones educativas del CREBE "Señor de los Milagros" - Ucayali u otra institución, dicha referencia debe entenderse como contexto de uso o coordinación, no como transferencia de autoría ni titularidad del proyecto digital.
 
 ## Uso permitido
 
-El proyecto puede ser consultado y utilizado con fines educativos, pedagógicos, familiares, institucionales y de sensibilización.
+El proyecto puede ser consultado y utilizado con fines educativos, pedagógicos, familiares y de sensibilización.
 
-Toda reutilización debe conservar la referencia al proyecto, al autor responsable, al CREBE "Señor de los Milagros" - Ucayali cuando exista apoyo institucional, y a las fuentes de los materiales externos que puedan incorporarse.
+Toda reutilización debe conservar la referencia al proyecto, al autor responsable y a las fuentes de los materiales externos que puedan incorporarse. Si el recurso se usa en un contexto institucional, debe respetarse el marco de uso autorizado.
 
 ## Licencia
 
-El código del repositorio se rige por el archivo `LICENSE`. Esta licencia no otorga automáticamente derechos sobre imágenes, logos institucionales, documentos externos, materiales educativos, recursos del Ministerio de Educación del Perú u otros contenidos elaborados por terceros.
+El código del repositorio se rige por el archivo `LICENSE`. Esta licencia no otorga automáticamente derechos sobre imágenes, logos, documentos externos, materiales educativos, recursos del Ministerio de Educación del Perú u otros contenidos elaborados por terceros.
 
 ## Estado del proyecto
 
@@ -97,5 +97,5 @@ Las siguientes etapas pueden incluir:
 ## Créditos
 
 Banco Digital Accesible.  
-Desarrollado por Gabriel Berrospi con apoyo institucional del CREBE "Señor de los Milagros" - Ucayali.  
-Plataforma educativa sin fines de lucro para la accesibilidad, inclusión educativa y atención a la diversidad.
+Proyecto desarrollado y organizado por Gabriel Berrospi.  
+Plataforma educativa personal sin fines de lucro para la accesibilidad, inclusión educativa y atención a la diversidad.
