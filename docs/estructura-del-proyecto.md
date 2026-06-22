@@ -2,7 +2,7 @@
 
 Este documento propone una organización básica para el Banco Digital Accesible.
 
-La estructura del repositorio busca separar los archivos principales, los datos, las imágenes, los materiales descargables y los documentos de respaldo, de manera que el proyecto pueda mantenerse ordenado, revisarse con facilidad y ampliarse progresivamente.
+La estructura del repositorio busca separar los archivos principales, los módulos internos, los datos, las imágenes, los materiales descargables y los documentos de respaldo, de manera que el proyecto pueda mantenerse ordenado, revisarse con facilidad y ampliarse progresivamente.
 
 Estructura sugerida:
 
@@ -14,6 +14,18 @@ banco-digital-accesible/
 ├── app.js
 ├── README.md
 ├── LICENSE
+│
+├── lsp/
+│   ├── index.html
+│   ├── app.js
+│   ├── datos/
+│   └── imagenes/
+│
+├── braille/
+│   ├── index.html
+│   ├── app.js
+│   ├── teoria.html
+│   └── datos/
 │
 ├── datos/
 │   └── recursos.json
@@ -40,6 +52,10 @@ Descripción de archivos y carpetas:
 `estilos.css` define la apariencia visual, el diseño responsivo, la organización de módulos, el contraste, los espaciados y la presentación general de la plataforma.
 
 `app.js` contiene la lógica de interacción, búsqueda, filtros, enlaces, carga de datos y presentación dinámica de recursos, si corresponde.
+
+`lsp/` contiene el módulo interno de Lengua de Señas Peruana, incluyendo sus páginas, datos, imágenes o recursos propios.
+
+`braille/` contiene el módulo interno del Sistema Braille, incluyendo sus páginas, datos, teoría o recursos propios.
 
 `datos/` almacena información organizada sobre recursos, categorías, enlaces, descripciones, módulos y materiales asociados.
 
