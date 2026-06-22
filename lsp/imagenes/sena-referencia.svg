@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Referencia visual para Lengua de Señas Peruana</title>
+  <desc id="descripcion">Imagen temporal usada como referencia visual mientras se incorporan las señas reales.</desc>
+  <rect width="640" height="480" rx="34" fill="#f7fafc"/>
+  <rect x="34" y="34" width="572" height="412" rx="28" fill="#ffffff" stroke="#d7e0e5" stroke-width="4"/>
+  <circle cx="320" cy="176" r="72" fill="#e5f3ef" stroke="#1f6a5a" stroke-width="6"/>
+  <path d="M280 204c-10-28-18-58-26-88-3-13 5-26 18-28 12-2 22 5 26 17l12 39V88c0-14 11-25 25-25s25 11 25 25v64l10-35c4-13 17-21 30-17 13 4 20 17 16 30l-20 70c-8 28-35 47-64 47h-5c-21 0-40-13-47-33z" fill="#1f6a5a" opacity="0.92"/>
+  <text x="320" y="315" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#17324d">Lengua de Señas Peruana</text>
+  <text x="320" y="358" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5b6871">Reemplazar por imagen de seña real</text>
+</svg>
