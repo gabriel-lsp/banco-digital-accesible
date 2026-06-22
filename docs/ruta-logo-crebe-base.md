@@ -1,6 +1,6 @@
 # Ruta base del logo institucional
 
-Para evitar errores de carga en páginas internas de GitHub Pages, usar esta ruta pública estable:
+Para evitar errores de carga en páginas internas de GitHub Pages, usar esta ruta pública estable dentro del Banco Digital Accesible:
 
 ```html
 <img
@@ -10,10 +10,4 @@ Para evitar errores de carga en páginas internas de GitHub Pages, usar esta rut
 >
 ```
 
-No usar la ruta antigua:
-
-```html
-https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/logo-crebe.png
-```
-
-Esa ruta apunta a un repositorio que no está disponible actualmente y puede provocar que el logo no cargue en pestañas internas.
+La ruta institucional del logo queda centralizada en BDA. No se requiere usar repositorios antiguos o externos para cargar este recurso.
