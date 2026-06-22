@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     name="description"
-    content="Banco Digital de Lengua de Señas Peruana para consulta educativa."
+    content="Lengua de Señas Peruana para consulta educativa dentro del Banco Digital Accesible."
   >
-  <title>Banco Digital de Lengua de Señas Peruana</title>
+  <title>Lengua de Señas Peruana</title>
   <link rel="stylesheet" href="estilos.css?v=16">
   <link rel="stylesheet" href="cabecera-bda.css?v=1">
 </head>
@@ -16,9 +16,9 @@
 
   <header class="cabecera">
     <nav class="navegacion" aria-label="Navegación principal">
-      <a class="marca" href="index.html" aria-label="Inicio">
+      <a class="marca" href="../index.html" aria-label="Volver al Banco Digital Accesible">
         <span class="marca-icono" aria-hidden="true">LSP</span>
-        <span>Banco Digital</span>
+        <span>Lengua de Señas Peruana</span>
       </a>
 
       <div class="enlaces-superiores">
@@ -46,7 +46,7 @@
       </div>
 
       <p class="etiqueta-superior">Recurso educativo de consulta visual</p>
-      <h1>Banco Digital de Lengua de Señas Peruana</h1>
+      <h1>Lengua de Señas Peruana</h1>
       <p class="subtitulo">
         Recurso visual de apoyo para la inclusión educativa
       </p>
@@ -57,7 +57,7 @@
     <section class="panel-busqueda" aria-labelledby="titulo-busqueda">
       <div class="panel-encabezado">
         <div>
-          <p class="seccion-etiqueta">Explorar el banco</p>
+          <p class="seccion-etiqueta">Explorar el módulo</p>
           <h2 id="titulo-busqueda">Encuentra una seña</h2>
         </div>
         <button id="limpiar" class="boton-secundario" type="button">
@@ -95,10 +95,38 @@
         </div>
       </div>
 
-      <div id="resumen" class="resumen" aria-live="polite"></div>
-      <div id="contenedor" class="grid-senas"></div>
+      <div class="resultado-resumen" aria-live="polite">
+        <p id="contador">Preparando contenidos…</p>
+        <p id="mostrando" class="mostrando"></p>
+      </div>
+
+      <div id="estado" class="estado-carga" role="status" aria-live="polite">
+        Preparando el módulo de Lengua de Señas Peruana…
+      </div>
+
+      <div id="galeria" class="galeria" aria-label="Resultados de señas"></div>
+
+      <div class="acciones-galeria">
+        <button id="cargar-mas" class="boton-principal" type="button" hidden>
+          Mostrar más señas
+        </button>
+      </div>
     </section>
   </main>
+
+  <template id="plantilla-tarjeta">
+    <article class="tarjeta">
+      <div class="marco-imagen">
+        <img class="imagen-sena" src="" alt="">
+      </div>
+      <div class="tarjeta-contenido">
+        <p class="categoria-tarjeta"></p>
+        <h3 class="palabra-tarjeta"></h3>
+        <p class="descripcion-tarjeta" hidden></p>
+        <p class="fuente-tarjeta" hidden></p>
+      </div>
+    </article>
+  </template>
 
   <footer>
     <p>© 2026 Gabriel Berrospi. Desarrollo original. Uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.</p>
