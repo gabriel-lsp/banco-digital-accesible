@@ -1,0 +1,380 @@
+[
+  {
+    "categoria": "alfabeto",
+    "simbolo": "A",
+    "nombre": "Letra A",
+    "braille": "⠁",
+    "descripcion": "Representación Braille de la letra A."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "B",
+    "nombre": "Letra B",
+    "braille": "⠃",
+    "descripcion": "Representación Braille de la letra B."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "C",
+    "nombre": "Letra C",
+    "braille": "⠉",
+    "descripcion": "Representación Braille de la letra C."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "D",
+    "nombre": "Letra D",
+    "braille": "⠙",
+    "descripcion": "Representación Braille de la letra D."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "E",
+    "nombre": "Letra E",
+    "braille": "⠑",
+    "descripcion": "Representación Braille de la letra E."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "F",
+    "nombre": "Letra F",
+    "braille": "⠋",
+    "descripcion": "Representación Braille de la letra F."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "G",
+    "nombre": "Letra G",
+    "braille": "⠛",
+    "descripcion": "Representación Braille de la letra G."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "H",
+    "nombre": "Letra H",
+    "braille": "⠓",
+    "descripcion": "Representación Braille de la letra H."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "I",
+    "nombre": "Letra I",
+    "braille": "⠊",
+    "descripcion": "Representación Braille de la letra I."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "J",
+    "nombre": "Letra J",
+    "braille": "⠚",
+    "descripcion": "Representación Braille de la letra J."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "K",
+    "nombre": "Letra K",
+    "braille": "⠅",
+    "descripcion": "Representación Braille de la letra K."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "L",
+    "nombre": "Letra L",
+    "braille": "⠇",
+    "descripcion": "Representación Braille de la letra L."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "M",
+    "nombre": "Letra M",
+    "braille": "⠍",
+    "descripcion": "Representación Braille de la letra M."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "N",
+    "nombre": "Letra N",
+    "braille": "⠝",
+    "descripcion": "Representación Braille de la letra N."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "Ñ",
+    "nombre": "Letra Ñ",
+    "braille": "⠻",
+    "descripcion": "Representación Braille de la letra Ñ en español."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "O",
+    "nombre": "Letra O",
+    "braille": "⠕",
+    "descripcion": "Representación Braille de la letra O."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "P",
+    "nombre": "Letra P",
+    "braille": "⠏",
+    "descripcion": "Representación Braille de la letra P."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "Q",
+    "nombre": "Letra Q",
+    "braille": "⠟",
+    "descripcion": "Representación Braille de la letra Q."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "R",
+    "nombre": "Letra R",
+    "braille": "⠗",
+    "descripcion": "Representación Braille de la letra R."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "S",
+    "nombre": "Letra S",
+    "braille": "⠎",
+    "descripcion": "Representación Braille de la letra S."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "T",
+    "nombre": "Letra T",
+    "braille": "⠞",
+    "descripcion": "Representación Braille de la letra T."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "U",
+    "nombre": "Letra U",
+    "braille": "⠥",
+    "descripcion": "Representación Braille de la letra U."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "V",
+    "nombre": "Letra V",
+    "braille": "⠧",
+    "descripcion": "Representación Braille de la letra V."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "W",
+    "nombre": "Letra W",
+    "braille": "⠺",
+    "descripcion": "Representación Braille de la letra W."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "X",
+    "nombre": "Letra X",
+    "braille": "⠭",
+    "descripcion": "Representación Braille de la letra X."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "Y",
+    "nombre": "Letra Y",
+    "braille": "⠽",
+    "descripcion": "Representación Braille de la letra Y."
+  },
+  {
+    "categoria": "alfabeto",
+    "simbolo": "Z",
+    "nombre": "Letra Z",
+    "braille": "⠵",
+    "descripcion": "Representación Braille de la letra Z."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "0",
+    "nombre": "Número cero",
+    "braille": "⠼⠚",
+    "descripcion": "Representación Braille del número cero usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "1",
+    "nombre": "Número uno",
+    "braille": "⠼⠁",
+    "descripcion": "Representación Braille del número uno usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "2",
+    "nombre": "Número dos",
+    "braille": "⠼⠃",
+    "descripcion": "Representación Braille del número dos usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "3",
+    "nombre": "Número tres",
+    "braille": "⠼⠉",
+    "descripcion": "Representación Braille del número tres usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "4",
+    "nombre": "Número cuatro",
+    "braille": "⠼⠙",
+    "descripcion": "Representación Braille del número cuatro usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "5",
+    "nombre": "Número cinco",
+    "braille": "⠼⠑",
+    "descripcion": "Representación Braille del número cinco usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "6",
+    "nombre": "Número seis",
+    "braille": "⠼⠋",
+    "descripcion": "Representación Braille del número seis usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "7",
+    "nombre": "Número siete",
+    "braille": "⠼⠛",
+    "descripcion": "Representación Braille del número siete usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "8",
+    "nombre": "Número ocho",
+    "braille": "⠼⠓",
+    "descripcion": "Representación Braille del número ocho usando signo numérico."
+  },
+  {
+    "categoria": "numeros",
+    "simbolo": "9",
+    "nombre": "Número nueve",
+    "braille": "⠼⠊",
+    "descripcion": "Representación Braille del número nueve usando signo numérico."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": ".",
+    "nombre": "Punto",
+    "braille": "⠄",
+    "descripcion": "Signo Braille usado para representar el punto."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": ",",
+    "nombre": "Coma",
+    "braille": "⠂",
+    "descripcion": "Signo Braille usado para representar la coma."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": ";",
+    "nombre": "Punto y coma",
+    "braille": "⠆",
+    "descripcion": "Signo Braille usado para representar el punto y coma."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": ":",
+    "nombre": "Dos puntos",
+    "braille": "⠒",
+    "descripcion": "Signo Braille usado para representar dos puntos."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": "?",
+    "nombre": "Signo de interrogación",
+    "braille": "⠢",
+    "descripcion": "Signo Braille usado en expresiones interrogativas."
+  },
+  {
+    "categoria": "signos-basicos",
+    "simbolo": "!",
+    "nombre": "Signo de exclamación",
+    "braille": "⠖",
+    "descripcion": "Signo Braille usado en expresiones exclamativas."
+  },
+  {
+    "categoria": "vocales-acentuadas",
+    "simbolo": "Á",
+    "nombre": "A con tilde",
+    "braille": "⠷",
+    "descripcion": "Representación Braille de la vocal A con tilde."
+  },
+  {
+    "categoria": "vocales-acentuadas",
+    "simbolo": "É",
+    "nombre": "E con tilde",
+    "braille": "⠮",
+    "descripcion": "Representación Braille de la vocal E con tilde."
+  },
+  {
+    "categoria": "vocales-acentuadas",
+    "simbolo": "Í",
+    "nombre": "I con tilde",
+    "braille": "⠌",
+    "descripcion": "Representación Braille de la vocal I con tilde."
+  },
+  {
+    "categoria": "vocales-acentuadas",
+    "simbolo": "Ó",
+    "nombre": "O con tilde",
+    "braille": "⠬",
+    "descripcion": "Representación Braille de la vocal O con tilde."
+  },
+  {
+    "categoria": "vocales-acentuadas",
+    "simbolo": "Ú",
+    "nombre": "U con tilde",
+    "braille": "⠾",
+    "descripcion": "Representación Braille de la vocal U con tilde."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "sol",
+    "nombre": "Sol",
+    "braille": "⠎⠕⠇",
+    "descripcion": "Palabra básica escrita en Braille."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "casa",
+    "nombre": "Casa",
+    "braille": "⠉⠁⠎⠁",
+    "descripcion": "Palabra básica escrita en Braille."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "mamá",
+    "nombre": "Mamá",
+    "braille": "⠍⠁⠍⠷",
+    "descripcion": "Palabra básica escrita en Braille con vocal acentuada."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "papá",
+    "nombre": "Papá",
+    "braille": "⠏⠁⠏⠷",
+    "descripcion": "Palabra básica escrita en Braille con vocal acentuada."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "agua",
+    "nombre": "Agua",
+    "braille": "⠁⠛⠥⠁",
+    "descripcion": "Palabra básica escrita en Braille."
+  },
+  {
+    "categoria": "palabras-basicas",
+    "simbolo": "niño",
+    "nombre": "Niño",
+    "braille": "⠝⠊⠻⠕",
+    "descripcion": "Palabra básica escrita en Braille con letra Ñ."
+  }
+]
