@@ -50,7 +50,7 @@
   {
     "id": "LSP-000007",
     "categoria": "adjetivos",
-    "palabra": "aspero",
+    "palabra": "áspero",
     "descripcion": "Deslizar lentamente las yemas de los dedos flexionados de la mano derecha sobre la palma de la mano izquierda.",
     "archivo_imagen": "imagenes/adjetivos/aspero.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -250,7 +250,7 @@
   {
     "id": "LSP-000032",
     "categoria": "adjetivos",
-    "palabra": "egoista",
+    "palabra": "egoísta",
     "descripcion": "Hacer un movimiento circular en el pecho con el puño de la mano derecha.",
     "archivo_imagen": "imagenes/adjetivos/egoista.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -282,7 +282,7 @@
   {
     "id": "LSP-000036",
     "categoria": "adjetivos",
-    "palabra": "facil",
+    "palabra": "fácil",
     "descripcion": "Con los dedos índice, medio, anular y meñique de la mano derecha hacer contacto con el dorso de los dedos de la mano izquierda, con movimiento hacia la derecha y hacia arriba.",
     "archivo_imagen": "imagenes/adjetivos/facil.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -346,7 +346,7 @@
   {
     "id": "LSP-000044",
     "categoria": "adjetivos",
-    "palabra": "frio",
+    "palabra": "frío",
     "descripcion": "Con ambos puños a la altura del pecho, realizar movimientos, acompañando de expresión de frío.",
     "archivo_imagen": "imagenes/adjetivos/frio.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -394,7 +394,7 @@
   {
     "id": "LSP-000050",
     "categoria": "adjetivos",
-    "palabra": "griton",
+    "palabra": "gritón",
     "descripcion": "Llevar la mano derecha con los dedos flexionados, hacia la boca, realizar un movimiento hacia afuera con energía y gesto enojado en el rostro.",
     "archivo_imagen": "imagenes/adjetivos/griton.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -402,7 +402,7 @@
   {
     "id": "LSP-000051",
     "categoria": "adjetivos",
-    "palabra": "humedo",
+    "palabra": "húmedo",
     "descripcion": "Colocar la palma de la mano derecha hacia arriba uniendo las yemas de los dedos y separarlas frotándolas.",
     "archivo_imagen": "imagenes/adjetivos/humedo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -530,7 +530,7 @@
   {
     "id": "LSP-000067",
     "categoria": "adjetivos",
-    "palabra": "pequeno",
+    "palabra": "pequeño",
     "descripcion": "Acercar lentamente ambas palmas extendidas frente a frente.",
     "archivo_imagen": "imagenes/adjetivos/pequeno.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -562,7 +562,7 @@
   {
     "id": "LSP-000071",
     "categoria": "adjetivos",
-    "palabra": "rapido",
+    "palabra": "rápido",
     "descripcion": "Chasquear los dedos de la mano derecha a un lado del cuerpo.",
     "archivo_imagen": "imagenes/adjetivos/rapido.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -634,7 +634,7 @@
   {
     "id": "LSP-000080",
     "categoria": "adjetivos",
-    "palabra": "tacano",
+    "palabra": "tacaño",
     "descripcion": "La palma de la mano derecha hace contacto con el codo izquierdo con movimientos cortos.",
     "archivo_imagen": "imagenes/adjetivos/tacano.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -690,7 +690,7 @@
   {
     "id": "LSP-000087",
     "categoria": "adverbios_y_preposiciones",
-    "palabra": "a traves",
+    "palabra": "a través",
     "descripcion": "Colocar la mano izquierda en posición horizontal. Pasar la mano derecha extendida por encima de la mano izquierda describiendo un movimiento semicircular.",
     "archivo_imagen": "imagenes/adverbios_y_preposiciones/a_traves.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -850,7 +850,7 @@
   {
     "id": "LSP-000107",
     "categoria": "adverbios_y_preposiciones",
-    "palabra": "si",
+    "palabra": "sí",
     "descripcion": "Con el puño de la mano derecha, en posición vertical, realizar un movimiento a nivel de la muñeca de arriba hacia abajo.",
     "archivo_imagen": "imagenes/adverbios_y_preposiciones/si.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1130,7 +1130,7 @@
   {
     "id": "LSP-000142",
     "categoria": "alimentos",
-    "palabra": "azucar",
+    "palabra": "azúcar",
     "descripcion": "1. Con los dedos medio e índice de la mano derecha tocar ligeramente los labios. 2. Simular acción de mover.",
     "archivo_imagen": "imagenes/alimentos/azucar.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1274,7 +1274,7 @@
   {
     "id": "LSP-000160",
     "categoria": "alimentos",
-    "palabra": "jamon",
+    "palabra": "jamón",
     "descripcion": "1. Configurar la seña de chancho. 2. Con la mano izquierda simular la acción de sujetar el jamón y con la derecha la acción de cortar.",
     "archivo_imagen": "imagenes/alimentos/jamon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1314,7 +1314,7 @@
   {
     "id": "LSP-000165",
     "categoria": "alimentos",
-    "palabra": "papa a la huancaina",
+    "palabra": "papa a la huancaína",
     "descripcion": "1. Seña de papa. 2. Seña del color amarillo. 3. Realizar movimientos giratorios con el pulgar de la mano derecha sobre la palma izquierda .",
     "archivo_imagen": "imagenes/alimentos/papa_a_la_huancaina.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1362,7 +1362,7 @@
   {
     "id": "LSP-000171",
     "categoria": "alimentos",
-    "palabra": "sandwich",
+    "palabra": "sándwich",
     "descripcion": "1. Unir palmas de ambas manos. 2. Dirigir ambas manos semiflexionadas a la boca.",
     "archivo_imagen": "imagenes/alimentos/sandwich.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1418,7 +1418,7 @@
   {
     "id": "LSP-000178",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "bano",
+    "palabra": "baño",
     "descripcion": "Configurar “B” con la mano derecha y realizar un movimiento giratorio.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/bano.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1474,7 +1474,7 @@
   {
     "id": "LSP-000185",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "champu",
+    "palabra": "champú",
     "descripcion": "Simular acción de lavarse la cabeza.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/champu.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1506,7 +1506,7 @@
   {
     "id": "LSP-000189",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "colchon",
+    "palabra": "colchón",
     "descripcion": "Colocar ambas manos con los dedos semiflexio- nados, palmas hacia afuera y realizar movimientos flexionando y extendiendo los dedos.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/colchon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1546,7 +1546,7 @@
   {
     "id": "LSP-000194",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "cucharon",
+    "palabra": "cucharón",
     "descripcion": "Con los dedos semiflexionados realizar un amplio movimiento semicircular de abajo hacia arriba.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/cucharon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1658,7 +1658,7 @@
   {
     "id": "LSP-000208",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "jabon",
+    "palabra": "jabón",
     "descripcion": "Diseñar con ambas manos la forma del jabón. Simular acción de lavarse las manos.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/jabon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1666,7 +1666,7 @@
   {
     "id": "LSP-000209",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "jardin",
+    "palabra": "jardín",
     "descripcion": "1. Con los dedos pulgar e índice de ambas manos diseñar un cuadrado (seña de lugar). 2. Configurar la seña de flor.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/jardin.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1674,7 +1674,7 @@
   {
     "id": "LSP-000210",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "lampara",
+    "palabra": "lámpara",
     "descripcion": "Unir los dedos de la mano derecha y realizar un movimiento hacia abajo abriendo los dedos.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/lampara.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1826,7 +1826,7 @@
   {
     "id": "LSP-000229",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "sabana",
+    "palabra": "sábana",
     "descripcion": "Simular acción de extender la sábana.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/sabana.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1842,7 +1842,7 @@
   {
     "id": "LSP-000231",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "sarten",
+    "palabra": "sartén",
     "descripcion": "Simular acción de coger la sartén por el mango acompañado de un movimiento de adentro hacia afuera.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/sarten.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1866,7 +1866,7 @@
   {
     "id": "LSP-000234",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "sofa",
+    "palabra": "sofá",
     "descripcion": "1. Configurar la seña de silla. 2. Con los dedos semiflexionados de ambas manos realizar un movimiento de flexión y extensión en forma simultánea.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/sofa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1890,7 +1890,7 @@
   {
     "id": "LSP-000237",
     "categoria": "ambientes_de_la_casa_y_articulos_del_hogar",
-    "palabra": "telefono",
+    "palabra": "teléfono",
     "descripcion": "Extender los dedos pulgar y meñique de la mano derecha, los demás dedos flexionados. En esta posición acercar la mano a la oreja y colocarla sobre la mano izquierda extendida.",
     "archivo_imagen": "imagenes/ambientes_de_la_casa_y_articulos_del_hogar/telefono.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -1946,7 +1946,7 @@
   {
     "id": "LSP-000244",
     "categoria": "animales",
-    "palabra": "buho",
+    "palabra": "búho",
     "descripcion": "Configurar con ambas manos la \"D\" y llevarlas a los ojos con movimientos suaves",
     "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -2234,7 +2234,7 @@
   {
     "id": "LSP-000281",
     "categoria": "bebidas",
-    "palabra": "cafe",
+    "palabra": "café",
     "descripcion": "Esta seña tiene dos acepciones: A. Acción de tomar una taza de café. B. Girar el puño derecho sobre el puño izquierdo..",
     "archivo_imagen": "imagenes/bebidas/cafe.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -2298,7 +2298,7 @@
   {
     "id": "LSP-000289",
     "categoria": "bebidas",
-    "palabra": "te",
+    "palabra": "té",
     "descripcion": "Con la mano derecha realizar acción de colocar una bolsita filtrante en la mano izquierda.",
     "archivo_imagen": "imagenes/bebidas/te.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -2338,7 +2338,7 @@
   {
     "id": "LSP-000294",
     "categoria": "contexto_escolar",
-    "palabra": "audifono",
+    "palabra": "audífono",
     "descripcion": "Llevar índice y pulgar semiflexionados detrás del pabellón de la oreja.",
     "archivo_imagen": "imagenes/contexto_escolar/audifono.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -2962,7 +2962,7 @@
   {
     "id": "LSP-000372",
     "categoria": "cuerpo_humano",
-    "palabra": "muneca",
+    "palabra": "muñeca",
     "descripcion": "Coger la muñeca de la mano izquierda, con la mano derecha.",
     "archivo_imagen": "imagenes/cuerpo_humano/muneca.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -2986,7 +2986,7 @@
   {
     "id": "LSP-000375",
     "categoria": "primeros_auxilios",
-    "palabra": "operacion",
+    "palabra": "operación",
     "descripcion": "Con el pulgar de la mano derecha sobre la palma de la mano izquierda marcar el movimiento de derecha a izquierda.",
     "archivo_imagen": "imagenes/primeros_auxilios/operacion.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3010,7 +3010,7 @@
   {
     "id": "LSP-000378",
     "categoria": "cuerpo_humano",
-    "palabra": "parpado",
+    "palabra": "párpado",
     "descripcion": "Señalar con el dedo índice.",
     "archivo_imagen": "imagenes/cuerpo_humano/parpado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3034,7 +3034,7 @@
   {
     "id": "LSP-000381",
     "categoria": "cuerpo_humano",
-    "palabra": "pestana",
+    "palabra": "pestaña",
     "descripcion": "Con los dedos de la mano derecha en posición horizontal a la altura del ojo, hacer un movimiento hacia adelante y arriba.",
     "archivo_imagen": "imagenes/cuerpo_humano/pestana.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3090,7 +3090,7 @@
   {
     "id": "LSP-000388",
     "categoria": "cuerpo_humano",
-    "palabra": "talon",
+    "palabra": "talón",
     "descripcion": "Señalar el talón con el dedo índice.",
     "archivo_imagen": "imagenes/cuerpo_humano/talon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3114,7 +3114,7 @@
   {
     "id": "LSP-000391",
     "categoria": "cuerpo_humano",
-    "palabra": "una",
+    "palabra": "uña",
     "descripcion": "Indicar con índice de la mano derecha la uña del índice de la mano izquierda.",
     "archivo_imagen": "imagenes/cuerpo_humano/una.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3154,7 +3154,7 @@
   {
     "id": "LSP-000396",
     "categoria": "frutas",
-    "palabra": "limon",
+    "palabra": "limón",
     "descripcion": "Acción de exprimir.",
     "archivo_imagen": "imagenes/frutas/limon.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3674,7 +3674,7 @@
   {
     "id": "LSP-000462",
     "categoria": "nociones_temporales",
-    "palabra": "ano",
+    "palabra": "año",
     "descripcion": "Ubicar el puño de la mano derecha sobre el puño de la mano izquierda y realizar un movimiento circular completo terminando en el mismo lugar.",
     "archivo_imagen": "imagenes/nociones_temporales/ano.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
@@ -3682,7 +3682,7 @@
   {
     "id": "LSP-000463",
     "categoria": "nociones_temporales",
-    "palabra": "ano pasado",
+    "palabra": "año pasado",
     "descripcion": "1. Configurar la seña de año. 2. Llevar la mano derecha con los dedos extendidos y juntos por encima del hombro hacia atrás .",
     "archivo_imagen": "imagenes/nociones_temporales/ano_pasado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
