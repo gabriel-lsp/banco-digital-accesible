@@ -1,7 +1,7 @@
 "use strict";
 
 const LIMITE_INICIAL = 8;
-const BASE_RECURSOS_LSP = "https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/";
+const BASE_RECURSOS_LSP = "https://gabriel-lsp.github.io/banco-digital-accesible/lsp/";
 
 const SECUENCIAS = [
   "ave maria",
@@ -16,6 +16,7 @@ const NOMBRES_SECUENCIAS = {
 };
 
 const RUTAS_DICCIONARIO = [
+  "datos/diccionario_lsp.json",
   `${BASE_RECURSOS_LSP}datos/diccionario_lsp.json`
 ];
 
@@ -114,14 +115,11 @@ function ordenarResultados(lista) {
 function obtenerNumeroImagen(item) {
   const ruta = String(item.archivo_imagen || "");
   const coincidencia = ruta.match(/(\d+)/);
-
   return coincidencia ? Number(coincidencia[1]) : 9999;
 }
 
 function ordenarPorImagen(lista) {
-  return [...lista].sort((a, b) => {
-    return obtenerNumeroImagen(a) - obtenerNumeroImagen(b);
-  });
+  return [...lista].sort((a, b) => obtenerNumeroImagen(a) - obtenerNumeroImagen(b));
 }
 
 function obtenerRutaImagen(ruta) {
@@ -382,7 +380,7 @@ async function cargarBanco() {
 
     elementos.estado.hidden = false;
     elementos.estado.textContent =
-      "No fue posible cargar el banco. Verifica que el diccionario LSP del repositorio maestro esté disponible.";
+      "No fue posible cargar el banco. Verifica que el diccionario LSP esté disponible dentro del Banco Digital Accesible.";
 
     elementos.contador.textContent = "Datos no disponibles";
     elementos.mostrando.textContent = "";
