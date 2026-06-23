@@ -4,6 +4,14 @@ Banco Digital Accesible es una plataforma educativa digital que desarrollo como 
 
 El proyecto busca reunir distintos recursos en un solo espacio de consulta, facilitando el acceso a materiales visuales, orientaciones básicas y herramientas que puedan apoyar a docentes, familias, estudiantes y personas interesadas en educación inclusiva.
 
+## Enlace publicado
+
+https://gabriel-lsp.github.io/banco-digital-accesible/
+
+## Página principal del ecosistema
+
+https://crebeucayali.weebly.com/
+
 ## Finalidad del proyecto
 
 La finalidad principal del Banco Digital Accesible es reunir y organizar recursos educativos digitales que favorezcan la accesibilidad, la inclusión educativa y el uso pedagógico de materiales de apoyo.
