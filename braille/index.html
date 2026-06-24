@@ -10,56 +10,7 @@
   <title>Banco Digital del Sistema Braille</title>
   <link rel="stylesheet" href="estilos.css?v=6">
   <link rel="stylesheet" href="cabecera-bda.css?v=1">
-
-  <style>
-    .acciones-panel{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-end;
-      gap:10px;
-    }
-
-    .botones-panel{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-      gap:10px;
-    }
-
-    .boton-braille-teoria{
-      display:inline-block;
-      text-decoration:none;
-      background:#0f766e;
-      color:#ffffff;
-      padding:11px 22px;
-      border-radius:999px;
-      font-weight:800;
-      white-space:nowrap;
-      box-shadow:0 8px 18px rgba(0,0,0,.12);
-    }
-
-    .boton-braille-teoria:hover{
-      background:#0b4f4a;
-      color:#ffffff;
-    }
-
-    @media (max-width:700px){
-      .acciones-panel{
-        align-items:flex-start;
-        width:100%;
-      }
-
-      .botones-panel{
-        width:100%;
-        flex-direction:column;
-      }
-
-      .boton-braille-teoria{
-        width:100%;
-        text-align:center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -257,7 +208,6 @@
       <h2 id="titulo-resultados" class="solo-lectores">
         Resultados de la consulta
       </h2>
-
       <div id="lista-tarjetas" class="lista-tarjetas" aria-busy="true"></div>
 
       <div class="contenedor-boton-mas">
