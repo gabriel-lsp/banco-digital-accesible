@@ -3,67 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Biblioteca Accesible del Banco Digital Accesible: espacio organizado para libros digitales, bases académicas, repositorios abiertos y accesos institucionales.">
+  <meta name="description" content="Biblioteca Accesible del Banco Digital Accesible: buscador de libros, artículos, guías, recursos bibliográficos y fuentes abiertas.">
   <title>Biblioteca Accesible | Banco Digital Accesible</title>
   <link rel="stylesheet" href="../estilos.css?v=2">
-  <style>
-    .enlaces-cabecera{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px;}
-    .patron-portada{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background-image:url("../patron-shipibo.png");background-repeat:repeat;background-size:cover;background-position:center;opacity:.26;filter:saturate(1.12) contrast(1.06);}
-    .cabecera .navegacion,.cabecera .portada{position:relative;z-index:1;}
-    .portada{max-width:1120px;margin:70px auto 0;}
-    .biblioteca-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch;margin-top:28px;}
-    .bloque-destacado{background:linear-gradient(180deg,#ffffff 0%,#eef9f6 100%);border:1px solid rgba(15,118,110,.28);border-radius:24px;padding:24px;box-shadow:0 10px 22px rgba(16,42,67,.06);}
-    .bloque-destacado h3{margin:0 0 10px;color:#0b2f4a;font-size:1.12rem;line-height:1.3;}
-    .bloque-destacado p{margin:0;color:var(--texto-suave);line-height:1.65;}
-    .acciones-biblioteca{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;}
-    .boton-secundario{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;color:var(--verde);background:#ffffff;border:1px solid rgba(15,118,110,.35);border-radius:999px;font-weight:800;text-decoration:none;cursor:pointer;}
-    .boton-secundario:hover,.boton-secundario:focus{background:var(--verde-suave);}
-    .estructura-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;}
-    .filtros-biblioteca{display:grid;grid-template-columns:1.2fr .8fr auto;gap:14px;align-items:end;margin-top:28px;}
-    .campo-biblioteca label{display:block;margin:0 0 8px;color:#0b2f4a;font-weight:800;}
-    .campo-biblioteca input,.campo-biblioteca select{width:100%;min-height:46px;border:1px solid var(--borde);border-radius:16px;padding:10px 14px;color:var(--texto);background:#ffffff;font:inherit;}
-    .resultado-biblioteca{margin:18px 0 0;color:var(--texto-suave);line-height:1.6;}
-    .lista-recursos{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px;}
-    .tarjeta-recurso{background:#ffffff;border:1px solid var(--borde);border-radius:24px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 22px rgba(16,42,67,.06);}
-    .cabecera-recurso{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px;}
-    .icono-recurso{width:52px;height:52px;border-radius:18px;background:var(--verde-suave);color:var(--verde);display:flex;align-items:center;justify-content:center;font-weight:900;flex:0 0 auto;}
-    .tipo-recurso{margin:0 0 6px;color:var(--verde);font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;}
-    .tarjeta-recurso h3{margin:0;color:#0b2f4a;font-size:1.08rem;line-height:1.3;}
-    .tarjeta-recurso p{margin:0;color:var(--texto-suave);line-height:1.62;font-size:.96rem;}
-    .meta-recurso{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;}
-    .meta-recurso div{border:1px solid var(--borde);border-radius:16px;padding:10px 12px;background:#f8fbfc;}
-    .meta-recurso span{display:block;margin-bottom:4px;color:#0b2f4a;font-size:.78rem;font-weight:900;}
-    .meta-recurso p{font-size:.88rem;line-height:1.45;}
-    .tarjeta-recurso .tarjeta-pie{margin-top:20px;}
-    .estado-material.pendiente{background:#fff8e5;color:#725918;border:1px solid #ebd599;}
-    .enlace-material.deshabilitado{background:#d9e2ec;color:#486581;cursor:not-allowed;pointer-events:none;}
-    .estado-catalogo{margin-top:18px;padding:16px 18px;border-radius:18px;background:#f7fbfa;border:1px solid rgba(15,118,110,.22);color:var(--texto-suave);line-height:1.6;}
-    .estado-catalogo[hidden]{display:none;}
-    .seccion-organizacion,.seccion-api{margin-top:28px;}
-    .panel-organizacion,.panel-api{background:var(--blanco);border:1px solid var(--borde);border-radius:26px;box-shadow:var(--sombra);padding:34px 42px;}
-    .mapa-biblioteca{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px;}
-    .paso-biblioteca{border:1px solid var(--borde);border-radius:22px;padding:20px;background:#ffffff;}
-    .paso-biblioteca h3{margin:0 0 10px;color:#0b2f4a;font-size:1.04rem;}
-    .paso-biblioteca p{margin:0;color:var(--texto-suave);line-height:1.65;}
-    .nota-uso{margin-top:24px;padding:20px 22px;border-radius:22px;background:#f7fbfa;border:1px solid rgba(15,118,110,.22);color:var(--texto-suave);line-height:1.65;}
-    .form-api{display:grid;grid-template-columns:1.2fr .75fr auto;gap:14px;align-items:end;margin-top:28px;}
-    .sugerencias-api{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
-    .sugerencia-api{border:1px solid rgba(15,118,110,.35);background:#ffffff;color:var(--verde);border-radius:999px;padding:8px 14px;font-weight:800;cursor:pointer;}
-    .sugerencia-api:hover,.sugerencia-api:focus{background:var(--verde-suave);}
-    .lista-api{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px;}
-    .tarjeta-api{background:#ffffff;border:1px solid var(--borde);border-radius:24px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 22px rgba(16,42,67,.06);}
-    .tarjeta-api h3{margin:0;color:#0b2f4a;font-size:1.08rem;line-height:1.3;}
-    .tarjeta-api p{margin:10px 0 0;color:var(--texto-suave);line-height:1.62;font-size:.96rem;}
-    .tarjeta-api .tipo-recurso{margin:0 0 8px;}
-    .api-formatos{margin-top:14px;color:var(--texto-suave);font-size:.9rem;line-height:1.5;}
-    .api-formatos span{font-weight:800;color:#0b2f4a;}
-    .footer-marca{display:flex;align-items:flex-start;gap:16px;}
-    .footer-logo{width:72px;max-width:72px;height:auto;object-fit:contain;display:block;flex-shrink:0;}
-    .footer-contenido{grid-template-columns:1.2fr 1fr 1.25fr;gap:32px;}
-    .footer-bloque a{text-decoration:underline;text-underline-offset:3px;}
-    @media (max-width:1000px){.estructura-grid{grid-template-columns:repeat(2,1fr);}.biblioteca-intro,.lista-recursos,.mapa-biblioteca,.lista-api{grid-template-columns:1fr;}}
-    @media (max-width:760px){.estructura-grid,.filtros-biblioteca,.footer-contenido,.meta-recurso,.form-api{grid-template-columns:1fr;}.enlaces-cabecera{justify-content:flex-start;}.footer-marca{align-items:center;}.footer-logo{width:60px;max-width:60px;}.acciones-biblioteca{flex-direction:column;}.boton-secundario,.acciones-biblioteca .enlace-material,.form-api .enlace-material,.sugerencia-api{width:100%;text-align:center;}}
-  </style>
+  <link rel="stylesheet" href="biblioteca.css?v=1">
 </head>
 <body>
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
@@ -72,11 +15,12 @@
     <div class="patron-portada" aria-hidden="true"></div>
     <nav class="navegacion" aria-label="Navegación principal">
       <a class="marca" href="../index.html" aria-label="Volver al Banco Digital Accesible">
-        <span class="marca-icono" aria-hidden="true">BIB</span>
-        <span>Biblioteca Accesible</span>
+        <span class="marca-icono" aria-hidden="true">BD</span>
+        <span>Biblioteca Digital Accesible</span>
       </a>
       <div class="enlaces-cabecera">
         <a class="enlace-cabecera" href="../index.html">Volver a BDA</a>
+        <a class="enlace-cabecera" href="criterios.html">Criterios de uso</a>
         <a class="enlace-cabecera" href="https://gabriel-lsp.github.io/accesos-complementarios/paginas/contacto.html">Contacto Institucional</a>
       </div>
     </nav>
@@ -89,89 +33,106 @@
           <p class="detalle-institucional">Centro de Recursos de Educación Básica Especial</p>
         </div>
       </div>
-      <p class="etiqueta">Consulta educativa y académica</p>
-      <h1>Biblioteca Accesible</h1>
-      <p class="subtitulo">Espacio organizado para reunir libros digitales, bases académicas, repositorios abiertos y accesos de consulta para docentes, estudiantes y familias.</p>
+      <p class="etiqueta">Búsqueda bibliográfica y académica</p>
+      <h1>Biblioteca Digital Accesible</h1>
+      <p class="subtitulo">Busca libros, guías, artículos, tesis, recursos educativos y fuentes abiertas para consulta, indagación e investigación.</p>
+
+      <section class="hero-busqueda" aria-labelledby="titulo-busqueda-principal">
+        <h2 id="titulo-busqueda-principal">¿Qué material necesitas encontrar?</h2>
+        <p>Usa el buscador para consultar el catálogo interno o explorar libros abiertos. Puedes buscar por tema, autor, título, área o palabra clave.</p>
+        <form class="form-busqueda-principal" id="form-busqueda-principal" aria-label="Búsqueda principal de biblioteca digital">
+          <div class="campo-biblioteca">
+            <label for="busqueda-principal">Buscar material</label>
+            <input id="busqueda-principal" type="search" placeholder="Ejemplo: educación inclusiva, lenguaje, psicología, infancia" autocomplete="off">
+          </div>
+          <div class="campo-biblioteca">
+            <label for="tipo-principal">Tipo de búsqueda</label>
+            <select id="tipo-principal">
+              <option value="todos">Todo el catálogo</option>
+              <option value="libros">Libros</option>
+              <option value="academico">Artículos / investigación</option>
+              <option value="guias">Guías</option>
+              <option value="institucional">Institucional</option>
+              <option value="externos">Fuentes abiertas</option>
+            </select>
+          </div>
+          <button class="enlace-material" type="submit">Buscar</button>
+        </form>
+        <div class="atajos-busqueda" aria-label="Búsquedas rápidas">
+          <button class="atajo-busqueda" type="button" data-consulta="educación" data-tipo="todos">Educación</button>
+          <button class="atajo-busqueda" type="button" data-consulta="infancia" data-tipo="libros">Infancia</button>
+          <button class="atajo-busqueda" type="button" data-consulta="psicología" data-tipo="externos">Psicología</button>
+          <button class="atajo-busqueda" type="button" data-consulta="investigación" data-tipo="academico">Investigación</button>
+        </div>
+      </section>
     </div>
   </header>
 
   <main id="contenido-principal">
-    <section class="panel-busqueda" aria-labelledby="titulo-biblioteca">
-      <div class="panel-encabezado">
+    <section class="panel-biblioteca" aria-labelledby="titulo-presentacion-bd">
+      <div class="panel-encabezado-bd">
         <div>
           <p class="sobretitulo">Biblioteca digital</p>
-          <h2 id="titulo-biblioteca">Accede a recursos de consulta</h2>
-          <p class="texto-panel">La biblioteca se organiza como un submódulo del Banco Digital Accesible. Su función es ordenar los accesos a materiales de lectura, fuentes académicas y recursos externos autorizados, sin mezclar su finalidad con los espacios de LSP o Braille.</p>
+          <h2 id="titulo-presentacion-bd">Búsqueda organizada de materiales bibliográficos</h2>
+          <p class="texto-panel">Esta biblioteca integra un catálogo curado y una búsqueda externa de libros abiertos. Los recursos se presentan con datos bibliográficos básicos para facilitar la consulta, la selección y la citación inicial.</p>
         </div>
       </div>
-
-      <div class="biblioteca-intro">
-        <article class="bloque-destacado">
-          <h3>Ruta recomendada de uso</h3>
-          <p>Primero se consulta el catálogo institucional. Luego, si el material requerido no se encuentra disponible, se revisan fuentes abiertas, bases académicas o repositorios externos. Esta organización ayuda a evitar enlaces dispersos y facilita el mantenimiento del módulo.</p>
-          <div class="acciones-biblioteca">
-            <a class="enlace-material" href="#catalogo-biblioteca">Ver catálogo</a>
-            <a class="boton-secundario" href="#fuentes-abiertas">Buscar en Gutendex</a>
-            <a class="boton-secundario" href="criterios.html">Criterios de uso</a>
-          </div>
-        </article>
-        <article class="bloque-destacado">
-          <h3>Criterio de incorporación</h3>
-          <p>Los materiales deben ser propios, autorizados, de dominio público o enlazados desde fuentes oficiales. Las licencias institucionales se muestran como orientación de acceso, pero las claves o credenciales no deben publicarse de forma abierta.</p>
-        </article>
-      </div>
-
-      <div class="estructura-grid" aria-label="Secciones principales de la biblioteca">
-        <article class="tarjeta-material disponible"><div><div class="material-icono" aria-hidden="true">LD</div><h3>Libros digitales</h3><p>Catálogo de libros, guías y documentos de lectura organizados por área, nivel, temática y condición de uso.</p></div><div class="tarjeta-pie"><span class="estado-material disponible">Base lista</span><a class="enlace-material" href="#catalogo-biblioteca">Explorar</a></div></article>
-        <article class="tarjeta-material disponible"><div><div class="material-icono" aria-hidden="true">GA</div><h3>Gutendex</h3><p>Búsqueda externa de libros abiertos de Project Gutenberg, sin claves privadas ni registro de usuarios.</p></div><div class="tarjeta-pie"><span class="estado-material disponible">Fase 1</span><a class="enlace-material" href="#fuentes-abiertas">Buscar</a></div></article>
-        <article class="tarjeta-material disponible"><div><div class="material-icono" aria-hidden="true">LI</div><h3>Licencias y accesos</h3><p>Orientaciones para usuarios autorizados, solicitudes de acceso y uso responsable de recursos institucionales.</p></div><div class="tarjeta-pie"><span class="estado-material disponible">Base lista</span><a class="enlace-material" href="#catalogo-biblioteca">Explorar</a></div></article>
-      </div>
+      <div class="nota-uso">Los materiales del catálogo deben ser propios, autorizados, de acceso abierto o enlazados desde fuentes oficiales. Las credenciales o licencias institucionales no deben publicarse en una página abierta.</div>
     </section>
 
-    <section id="catalogo-biblioteca" class="seccion-presentacion" aria-labelledby="titulo-catalogo-biblioteca">
-      <div class="panel-busqueda">
-        <div class="panel-encabezado">
-          <div>
-            <p class="sobretitulo">Catálogo inicial</p>
-            <h2 id="titulo-catalogo-biblioteca">Recursos organizados por tipo</h2>
-            <p class="texto-panel">El catálogo se carga desde el archivo <strong>datos/recursos.json</strong>. Para agregar o actualizar recursos ya no es necesario modificar toda la página, solo editar el archivo de datos.</p>
-          </div>
+    <section id="resultados-biblioteca" class="panel-biblioteca" aria-labelledby="titulo-resultados-bd">
+      <div class="panel-encabezado-bd">
+        <div>
+          <p class="sobretitulo">Resultados</p>
+          <h2 id="titulo-resultados-bd">Explora el catálogo y las fuentes abiertas</h2>
+          <p class="texto-panel">El catálogo interno se administra desde <strong>datos/recursos.json</strong>. La búsqueda externa utiliza únicamente libros abiertos de Project Gutenberg mediante Gutendex.</p>
         </div>
+      </div>
 
-        <div class="filtros-biblioteca" aria-label="Filtros del catálogo">
+      <div class="tabs-biblioteca" role="tablist" aria-label="Opciones de búsqueda de la biblioteca">
+        <button class="tab-biblioteca activo" type="button" role="tab" aria-selected="true" data-tab="panel-catalogo">Catálogo BDA-BD</button>
+        <button class="tab-biblioteca" type="button" role="tab" aria-selected="false" data-tab="panel-externos">Libros abiertos</button>
+      </div>
+
+      <section id="panel-catalogo" class="panel-tab" role="tabpanel" aria-labelledby="Catálogo BDA-BD">
+        <div class="filtros-biblioteca" aria-label="Filtros del catálogo interno">
           <div class="campo-biblioteca">
-            <label for="busqueda-biblioteca">Buscar recurso</label>
-            <input id="busqueda-biblioteca" type="search" placeholder="Ejemplo: lectura, base académica, licencia">
+            <label for="busqueda-biblioteca">Buscar en catálogo</label>
+            <input id="busqueda-biblioteca" type="search" placeholder="Tema, autor, título o palabra clave">
           </div>
           <div class="campo-biblioteca">
-            <label for="tipo-biblioteca">Filtrar por tipo</label>
+            <label for="tipo-biblioteca">Tipo</label>
             <select id="tipo-biblioteca">
               <option value="">Todos los tipos</option>
               <option value="institucional">Institucional</option>
-              <option value="libros">Libros digitales</option>
-              <option value="academico">Académico</option>
+              <option value="libros">Libros</option>
+              <option value="academico">Artículos / investigación</option>
               <option value="licencias">Licencias</option>
               <option value="guias">Guías</option>
+              <option value="solicitudes">Solicitudes</option>
+            </select>
+          </div>
+          <div class="campo-biblioteca">
+            <label for="estado-biblioteca">Acceso</label>
+            <select id="estado-biblioteca">
+              <option value="">Todos</option>
+              <option value="abierto">Acceso abierto</option>
+              <option value="pendiente">Pendiente</option>
+              <option value="restringido">Requiere autorización</option>
             </select>
           </div>
           <button id="limpiar-biblioteca" class="boton-secundario" type="button">Limpiar</button>
         </div>
-        <p id="contador-biblioteca" class="resultado-biblioteca" aria-live="polite">Cargando recursos disponibles.</p>
+        <p id="contador-biblioteca" class="resultado-biblioteca" aria-live="polite">Cargando recursos bibliográficos.</p>
         <div id="estado-catalogo" class="estado-catalogo" role="status" aria-live="polite">Preparando el catálogo digital...</div>
-        <div class="lista-recursos" id="lista-biblioteca" aria-label="Recursos de la biblioteca"></div>
-      </div>
-    </section>
+        <div class="lista-recursos" id="lista-biblioteca" aria-label="Recursos bibliográficos del catálogo"></div>
+      </section>
 
-    <section id="fuentes-abiertas" class="seccion-api" aria-labelledby="titulo-fuentes-abiertas">
-      <div class="panel-api">
-        <p class="sobretitulo">Fase 1</p>
-        <h2 id="titulo-fuentes-abiertas">Explorar libros abiertos con Gutendex</h2>
-        <p class="texto-panel">Esta búsqueda consulta libros abiertos de Project Gutenberg mediante Gutendex. Para mejorar los resultados, la página inicia con una búsqueda de ejemplo y también reintenta sin filtro de idioma cuando no encuentra coincidencias.</p>
-
+      <section id="panel-externos" class="panel-tab" role="tabpanel" aria-labelledby="Libros abiertos" hidden>
         <form class="form-api" id="form-gutendex" aria-label="Buscar libros abiertos en Gutendex">
           <div class="campo-biblioteca">
-            <label for="busqueda-gutendex">Buscar por título, autor o tema</label>
-            <input id="busqueda-gutendex" type="search" placeholder="Ejemplo: education, child, language" autocomplete="off">
+            <label for="busqueda-gutendex">Buscar libro abierto</label>
+            <input id="busqueda-gutendex" type="search" placeholder="Ejemplo: education, children, language" autocomplete="off">
           </div>
           <div class="campo-biblioteca">
             <label for="idioma-gutendex">Idioma</label>
@@ -185,34 +146,27 @@
           </div>
           <button class="enlace-material" type="submit">Buscar libros</button>
         </form>
-
         <div class="sugerencias-api" aria-label="Búsquedas sugeridas">
           <button class="sugerencia-api" type="button" data-consulta="education">Educación</button>
           <button class="sugerencia-api" type="button" data-consulta="children">Infancia</button>
           <button class="sugerencia-api" type="button" data-consulta="language">Lenguaje</button>
           <button class="sugerencia-api" type="button" data-consulta="psychology">Psicología</button>
         </div>
-
         <p id="contador-gutendex" class="resultado-biblioteca" aria-live="polite">Cargando búsqueda inicial de libros abiertos.</p>
         <div id="estado-gutendex" class="estado-catalogo" role="status" aria-live="polite" hidden></div>
-        <div class="lista-api" id="lista-gutendex" aria-label="Resultados de Gutendex"></div>
-      </div>
+        <div class="lista-api" id="lista-gutendex" aria-label="Resultados de libros abiertos"></div>
+      </section>
     </section>
 
-    <section id="organizacion-biblioteca" class="seccion-organizacion" aria-labelledby="titulo-organizacion-biblioteca">
-      <div class="panel-organizacion">
-        <p class="sobretitulo">Organización sugerida</p>
-        <h2 id="titulo-organizacion-biblioteca">Modelo de crecimiento del módulo</h2>
-        <p class="texto-panel">La mejor alternativa es mantener esta biblioteca como una sección propia dentro de BDA, con enlaces controlados y categorías estables. Si más adelante aumenta el número de recursos, se puede migrar el catálogo a una hoja de cálculo, una base de datos o un servicio externo.</p>
-
-        <div class="mapa-biblioteca">
-          <article class="paso-biblioteca"><h3>1. Catálogo básico</h3><p>Registro de recursos en <strong>datos/recursos.json</strong>, con título, tipo, descripción, público recomendado, fuente y enlace.</p></article>
-          <article class="paso-biblioteca"><h3>2. Almacenamiento externo</h3><p>Uso de carpetas institucionales o servicios de almacenamiento para evitar cargar archivos pesados dentro del repositorio.</p></article>
-          <article class="paso-biblioteca"><h3>3. Accesos protegidos</h3><p>Orientación pública para el usuario y entrega privada de credenciales cuando existan licencias institucionales.</p></article>
-          <article class="paso-biblioteca"><h3>4. Fuentes abiertas</h3><p>Consulta externa mediante Gutendex para localizar libros abiertos sin incorporar archivos protegidos al repositorio.</p></article>
-        </div>
-
-        <div class="nota-uso">Esta biblioteca no debe publicar libros protegidos sin autorización. Lo más seguro es enlazar fuentes oficiales, materiales propios, documentos autorizados o recursos con licencia abierta.</div>
+    <section class="panel-organizacion" aria-labelledby="titulo-organizacion-biblioteca">
+      <p class="sobretitulo">Organización sugerida</p>
+      <h2 id="titulo-organizacion-biblioteca">Modelo de crecimiento del módulo</h2>
+      <p class="texto-panel">La biblioteca debe crecer primero como catálogo curado y luego incorporar más fuentes externas. Para artículos académicos, se recomienda una fase posterior separada de Gutendex, ya que Gutendex está orientado a libros abiertos.</p>
+      <div class="mapa-biblioteca">
+        <article class="paso-biblioteca"><h3>1. Catálogo curado</h3><p>Registrar recursos reales con autor, año, tipo, fuente, formato, licencia, enlace, palabras clave y fecha de revisión.</p></article>
+        <article class="paso-biblioteca"><h3>2. Búsqueda externa</h3><p>Usar Gutendex únicamente para libros abiertos, manteniendo los resultados como consulta externa.</p></article>
+        <article class="paso-biblioteca"><h3>3. Artículos académicos</h3><p>Incorporar en una fase posterior una búsqueda separada para artículos, tesis o DOI, sin mezclarla con libros abiertos.</p></article>
+        <article class="paso-biblioteca"><h3>4. Mantenimiento</h3><p>Revisar enlaces, actualizar fechas de revisión y retirar recursos vencidos o sin fuente clara.</p></article>
       </div>
     </section>
   </main>
@@ -222,8 +176,8 @@
       <section class="footer-bloque footer-columna footer-marca" aria-labelledby="titulo-footer-descripcion">
         <img class="footer-logo" src="https://gabriel-lsp.github.io/banco-digital-accesible/logo-crebe.png" alt="Logo del CREBE Señor de los Milagros - Ucayali">
         <div>
-          <h2 id="titulo-footer-descripcion">Biblioteca Accesible</h2>
-          <p>Submódulo del Banco Digital Accesible para organizar recursos de consulta, lectura, investigación y acceso académico.</p>
+          <h2 id="titulo-footer-descripcion">Biblioteca Digital Accesible</h2>
+          <p>Submódulo del Banco Digital Accesible para organizar recursos bibliográficos, libros abiertos, guías, fuentes de investigación y accesos institucionales.</p>
         </div>
       </section>
 
@@ -253,272 +207,6 @@
     </div>
   </footer>
 
-  <script>
-    const busqueda = document.getElementById('busqueda-biblioteca');
-    const tipo = document.getElementById('tipo-biblioteca');
-    const limpiar = document.getElementById('limpiar-biblioteca');
-    const contador = document.getElementById('contador-biblioteca');
-    const lista = document.getElementById('lista-biblioteca');
-    const estadoCatalogo = document.getElementById('estado-catalogo');
-    const formGutendex = document.getElementById('form-gutendex');
-    const busquedaGutendex = document.getElementById('busqueda-gutendex');
-    const idiomaGutendex = document.getElementById('idioma-gutendex');
-    const listaGutendex = document.getElementById('lista-gutendex');
-    const contadorGutendex = document.getElementById('contador-gutendex');
-    const estadoGutendex = document.getElementById('estado-gutendex');
-    const sugerenciasGutendex = Array.from(document.querySelectorAll('.sugerencia-api'));
-    let recursos = [];
-
-    const equivalenciasGutendex = {
-      educacion:'education',
-      educativo:'education',
-      escuela:'school',
-      infancia:'children',
-      nino:'children',
-      ninos:'children',
-      lenguaje:'language',
-      comunicacion:'language',
-      psicologia:'psychology',
-      inclusion:'education',
-      discapacidad:'disability',
-      familia:'family'
-    };
-
-    function normalizar(texto){
-      return String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    }
-
-    function crearTarjeta(recurso){
-      const articulo = document.createElement('article');
-      articulo.className = 'tarjeta-recurso';
-      articulo.dataset.tipo = recurso.tipo || '';
-      articulo.dataset.texto = normalizar([recurso.titulo,recurso.tipoEtiqueta,recurso.descripcion,recurso.area,recurso.nivel,recurso.fuente,recurso.condicion].join(' '));
-
-      const contenido = document.createElement('div');
-      const cabecera = document.createElement('div');
-      cabecera.className = 'cabecera-recurso';
-      const icono = document.createElement('div');
-      icono.className = 'icono-recurso';
-      icono.setAttribute('aria-hidden','true');
-      icono.textContent = recurso.icono || 'BIB';
-      const datosTitulo = document.createElement('div');
-      const etiqueta = document.createElement('p');
-      etiqueta.className = 'tipo-recurso';
-      etiqueta.textContent = recurso.tipoEtiqueta || 'Recurso';
-      const titulo = document.createElement('h3');
-      titulo.textContent = recurso.titulo || 'Recurso sin título';
-      datosTitulo.append(etiqueta,titulo);
-      cabecera.append(icono,datosTitulo);
-      const descripcion = document.createElement('p');
-      descripcion.textContent = recurso.descripcion || 'Recurso pendiente de descripción.';
-      const meta = document.createElement('div');
-      meta.className = 'meta-recurso';
-      [['Área', recurso.area],['Dirigido a', recurso.nivel],['Fuente', recurso.fuente],['Condición', recurso.condicion]].forEach(([nombre, valor]) => {
-        const caja = document.createElement('div');
-        const span = document.createElement('span');
-        span.textContent = nombre;
-        const parrafo = document.createElement('p');
-        parrafo.textContent = valor || 'Por definir';
-        caja.append(span,parrafo);
-        meta.appendChild(caja);
-      });
-      contenido.append(cabecera,descripcion,meta);
-      const pie = document.createElement('div');
-      pie.className = 'tarjeta-pie';
-      const estado = document.createElement('span');
-      estado.className = `estado-material ${recurso.estado === 'disponible' ? 'disponible' : 'pendiente'}`;
-      estado.textContent = recurso.estadoEtiqueta || 'Pendiente';
-      pie.appendChild(estado);
-      if(recurso.enlace){
-        const enlace = document.createElement('a');
-        enlace.className = 'enlace-material';
-        enlace.href = recurso.enlace;
-        enlace.textContent = recurso.accion || 'Acceder';
-        if(/^https?:\/\//.test(recurso.enlace)){enlace.target = '_blank';enlace.rel = 'noopener noreferrer';}
-        pie.appendChild(enlace);
-      }else{
-        const pendiente = document.createElement('span');
-        pendiente.className = 'enlace-material deshabilitado';
-        pendiente.textContent = recurso.accion || 'Configurar';
-        pie.appendChild(pendiente);
-      }
-      articulo.append(contenido,pie);
-      return articulo;
-    }
-
-    function renderizarRecursos(){
-      const texto = normalizar(busqueda.value.trim());
-      const tipoSeleccionado = tipo.value;
-      let visibles = 0;
-      lista.innerHTML = '';
-      recursos.forEach((recurso) => {
-        const tarjeta = crearTarjeta(recurso);
-        const coincideTexto = !texto || tarjeta.dataset.texto.includes(texto);
-        const coincideTipo = !tipoSeleccionado || recurso.tipo === tipoSeleccionado;
-        if(coincideTexto && coincideTipo){lista.appendChild(tarjeta);visibles += 1;}
-      });
-      contador.textContent = visibles === 1 ? 'Mostrando 1 recurso.' : `Mostrando ${visibles} recursos.`;
-      estadoCatalogo.hidden = visibles > 0;
-      if(visibles === 0){estadoCatalogo.textContent = 'No se encontraron recursos con esos criterios. Prueba con otra palabra o limpia el filtro.';}
-    }
-
-    async function cargarCatalogo(){
-      try{
-        const respuesta = await fetch('datos/recursos.json?v=1');
-        if(!respuesta.ok){throw new Error('No se pudo cargar el archivo de datos.');}
-        recursos = await respuesta.json();
-        estadoCatalogo.hidden = true;
-        renderizarRecursos();
-      }catch(error){
-        recursos = [];
-        lista.innerHTML = '';
-        contador.textContent = 'No hay recursos cargados.';
-        estadoCatalogo.hidden = false;
-        estadoCatalogo.textContent = 'No se pudo cargar el catálogo. Revisa el archivo datos/recursos.json o la conexión del sitio.';
-      }
-    }
-
-    function obtenerFormatoDisponible(formatos){
-      const prioridad = [['text/html', 'Leer en línea'],['application/epub+zip', 'Descargar EPUB'],['application/pdf', 'Ver PDF'],['text/plain', 'Texto simple']];
-      for(const [clave, etiqueta] of prioridad){
-        const entrada = Object.entries(formatos || {}).find(([tipo]) => tipo.includes(clave));
-        if(entrada){return {url: entrada[1], etiqueta};}
-      }
-      const alternativa = Object.values(formatos || {}).find(Boolean);
-      return alternativa ? {url: alternativa, etiqueta: 'Acceder'} : null;
-    }
-
-    function crearTarjetaGutendex(libro){
-      const articulo = document.createElement('article');
-      articulo.className = 'tarjeta-api';
-      const autores = Array.isArray(libro.authors) && libro.authors.length ? libro.authors.map((autor) => autor.name).join(', ') : 'Autor no identificado';
-      const idiomas = Array.isArray(libro.languages) && libro.languages.length ? libro.languages.join(', ').toUpperCase() : 'No indicado';
-      const materias = Array.isArray(libro.subjects) && libro.subjects.length ? libro.subjects.slice(0,3).join('; ') : 'Sin materias registradas';
-      const formato = obtenerFormatoDisponible(libro.formats);
-      const contenido = document.createElement('div');
-      const etiqueta = document.createElement('p');
-      etiqueta.className = 'tipo-recurso';
-      etiqueta.textContent = 'Libro abierto';
-      const titulo = document.createElement('h3');
-      titulo.textContent = libro.title || 'Libro sin título';
-      const datos = document.createElement('p');
-      datos.innerHTML = `<strong>Autor:</strong> ${autores}<br><strong>Idioma:</strong> ${idiomas}<br><strong>Temas:</strong> ${materias}`;
-      const formatos = document.createElement('div');
-      formatos.className = 'api-formatos';
-      formatos.innerHTML = `<span>Fuente:</span> Project Gutenberg mediante Gutendex`;
-      contenido.append(etiqueta,titulo,datos,formatos);
-      const pie = document.createElement('div');
-      pie.className = 'tarjeta-pie';
-      const estado = document.createElement('span');
-      estado.className = 'estado-material disponible';
-      estado.textContent = 'Disponible';
-      pie.appendChild(estado);
-      if(formato && formato.url){
-        const enlace = document.createElement('a');
-        enlace.className = 'enlace-material';
-        enlace.href = formato.url;
-        enlace.target = '_blank';
-        enlace.rel = 'noopener noreferrer';
-        enlace.textContent = formato.etiqueta;
-        pie.appendChild(enlace);
-      }else{
-        const pendiente = document.createElement('span');
-        pendiente.className = 'enlace-material deshabilitado';
-        pendiente.textContent = 'Sin enlace directo';
-        pie.appendChild(pendiente);
-      }
-      articulo.append(contenido,pie);
-      return articulo;
-    }
-
-    async function consultarGutendex(consulta, idioma){
-      const parametros = new URLSearchParams({search: consulta});
-      if(idioma){parametros.set('languages', idioma);}
-      const respuesta = await fetch(`https://gutendex.com/books/?${parametros.toString()}`);
-      if(!respuesta.ok){throw new Error('No se pudo consultar Gutendex.');}
-      const datos = await respuesta.json();
-      return Array.isArray(datos.results) ? datos.results.slice(0,8) : [];
-    }
-
-    function consultasAlternativas(consulta){
-      const base = normalizar(consulta).trim();
-      const alternativas = [consulta, base];
-      Object.entries(equivalenciasGutendex).forEach(([clave, valor]) => {
-        if(base.includes(clave)){alternativas.push(valor);}
-      });
-      alternativas.push('education');
-      return [...new Set(alternativas.filter(Boolean))];
-    }
-
-    function mostrarResultadosGutendex(resultados, mensaje){
-      listaGutendex.innerHTML = '';
-      resultados.forEach((libro) => listaGutendex.appendChild(crearTarjetaGutendex(libro)));
-      contadorGutendex.textContent = resultados.length === 1 ? 'Mostrando 1 libro abierto.' : `Mostrando ${resultados.length} libros abiertos.`;
-      estadoGutendex.hidden = !mensaje;
-      if(mensaje){estadoGutendex.textContent = mensaje;}
-    }
-
-    async function ejecutarBusquedaGutendex(consulta, idioma, esInicial = false){
-      listaGutendex.innerHTML = '';
-      estadoGutendex.hidden = false;
-      estadoGutendex.textContent = 'Consultando Gutendex...';
-      contadorGutendex.textContent = 'Buscando libros abiertos.';
-      const intentos = consultasAlternativas(consulta);
-
-      try{
-        for(const intento of intentos){
-          let resultados = await consultarGutendex(intento, idioma);
-          if(!resultados.length && idioma){resultados = await consultarGutendex(intento, '');}
-          if(resultados.length){
-            const mensaje = intento !== consulta || idioma ? `Resultados encontrados usando "${intento}". Si el filtro de idioma no devuelve libros, se muestran coincidencias generales.` : '';
-            mostrarResultadosGutendex(resultados, esInicial ? 'Búsqueda inicial cargada automáticamente para comprobar el funcionamiento de Gutendex.' : mensaje);
-            return;
-          }
-        }
-        mostrarResultadosGutendex([], 'No se encontraron libros con esos criterios. Prueba con los botones sugeridos o usa términos como education, children, language o psychology.');
-      }catch(error){
-        listaGutendex.innerHTML = '';
-        contadorGutendex.textContent = 'No se pudo completar la búsqueda.';
-        estadoGutendex.hidden = false;
-        estadoGutendex.textContent = 'La consulta externa no respondió. Intenta nuevamente o revisa la conexión.';
-      }
-    }
-
-    async function buscarGutendex(evento){
-      evento.preventDefault();
-      const consulta = busquedaGutendex.value.trim();
-      const idioma = idiomaGutendex.value;
-      if(!consulta){
-        listaGutendex.innerHTML = '';
-        contadorGutendex.textContent = 'Escribe una palabra para buscar libros abiertos.';
-        estadoGutendex.hidden = false;
-        estadoGutendex.textContent = 'La búsqueda necesita una palabra, tema, título o autor.';
-        busquedaGutendex.focus();
-        return;
-      }
-      await ejecutarBusquedaGutendex(consulta, idioma);
-    }
-
-    busqueda.addEventListener('input', renderizarRecursos);
-    tipo.addEventListener('change', renderizarRecursos);
-    limpiar.addEventListener('click', () => {
-      busqueda.value = '';
-      tipo.value = '';
-      renderizarRecursos();
-      busqueda.focus();
-    });
-    formGutendex.addEventListener('submit', buscarGutendex);
-    sugerenciasGutendex.forEach((boton) => {
-      boton.addEventListener('click', () => {
-        busquedaGutendex.value = boton.dataset.consulta || '';
-        idiomaGutendex.value = '';
-        ejecutarBusquedaGutendex(busquedaGutendex.value, '');
-      });
-    });
-
-    cargarCatalogo();
-    busquedaGutendex.value = 'education';
-    ejecutarBusquedaGutendex('education', '', true);
-  </script>
+  <script src="biblioteca.js?v=1" defer></script>
 </body>
 </html>
