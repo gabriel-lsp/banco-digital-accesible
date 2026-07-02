@@ -84,7 +84,7 @@
         <div>
           <p class="sobretitulo">Resultados</p>
           <h2 id="titulo-resultados-bd">Explora el catálogo y las fuentes abiertas</h2>
-          <p class="texto-panel">Busca en el catálogo bibliográfico o revisa libros abiertos mediante Gutendex.</p>
+          <p class="texto-panel">Los resultados se actualizan desde el buscador principal.</p>
         </div>
       </div>
 
@@ -92,33 +92,7 @@
         <button class="tab-biblioteca" type="button" role="tab" aria-selected="false" data-tab="panel-externos">Libros abiertos</button>
       </div>
 
-      <section id="panel-catalogo" class="panel-tab" role="tabpanel" aria-labelledby="Catálogo interno">
-        <div class="filtros-biblioteca" aria-label="Filtros del catálogo">
-          <div class="campo-biblioteca">
-            <label for="busqueda-biblioteca">Buscar en catálogo</label>
-            <input id="busqueda-biblioteca" type="search" placeholder="Tema, autor, título o palabra clave">
-          </div>
-          <div class="campo-biblioteca">
-            <label for="tipo-biblioteca">Tipo</label>
-            <select id="tipo-biblioteca">
-              <option value="">Todos los tipos</option>
-              <option value="libros">Libros</option>
-              <option value="academico">Artículos / investigación</option>
-              <option value="guias">Guías</option>
-              <option value="solicitudes">Solicitudes</option>
-            </select>
-          </div>
-          <div class="campo-biblioteca">
-            <label for="estado-biblioteca">Acceso</label>
-            <select id="estado-biblioteca">
-              <option value="">Todos</option>
-              <option value="abierto">Acceso abierto</option>
-              <option value="pendiente">Pendiente</option>
-              <option value="restringido">Requiere autorización</option>
-            </select>
-          </div>
-          <button id="limpiar-biblioteca" class="boton-secundario" type="button">Limpiar</button>
-        </div>
+      <section id="panel-catalogo" class="panel-tab" role="tabpanel" aria-labelledby="Catálogo bibliográfico">
         <p id="contador-biblioteca" class="resultado-biblioteca" aria-live="polite">Cargando recursos bibliográficos.</p>
         <div id="estado-catalogo" class="estado-catalogo" role="status" aria-live="polite">Preparando el catálogo digital...</div>
         <div class="lista-recursos" id="lista-biblioteca" aria-label="Recursos bibliográficos del catálogo"></div>
@@ -191,6 +165,6 @@
     </div>
   </footer>
 
-  <script src="biblioteca.js?v=1" defer></script>
+  <script src="biblioteca.js?v=2" defer></script>
 </body>
 </html>
