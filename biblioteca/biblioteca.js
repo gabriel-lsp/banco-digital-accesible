@@ -5,10 +5,6 @@ const atajosBusqueda = Array.from(document.querySelectorAll('.atajo-busqueda'));
 const tabs = Array.from(document.querySelectorAll('.tab-biblioteca'));
 const panelesTab = Array.from(document.querySelectorAll('.panel-tab'));
 
-const busquedaCatalogo = document.getElementById('busqueda-biblioteca');
-const tipoCatalogo = document.getElementById('tipo-biblioteca');
-const estadoCatalogoSelect = document.getElementById('estado-biblioteca');
-const limpiarCatalogo = document.getElementById('limpiar-biblioteca');
 const contadorCatalogo = document.getElementById('contador-biblioteca');
 const listaCatalogo = document.getElementById('lista-biblioteca');
 const estadoCatalogo = document.getElementById('estado-catalogo');
@@ -22,6 +18,8 @@ const estadoGutendex = document.getElementById('estado-gutendex');
 const sugerenciasGutendex = Array.from(document.querySelectorAll('.sugerencia-api'));
 
 let recursos = [];
+let filtroCatalogoTexto = '';
+let filtroCatalogoTipo = '';
 
 const equivalenciasGutendex = {
   educacion:'education', educativo:'education', escuela:'school',
@@ -151,18 +149,16 @@ function crearTarjetaRecurso(recurso){
 }
 
 function renderizarCatalogo(){
-  const texto = normalizar(busquedaCatalogo.value.trim());
-  const tipoSeleccionado = tipoCatalogo.value;
-  const estadoSeleccionado = estadoCatalogoSelect.value;
+  const texto = normalizar(filtroCatalogoTexto);
+  const tipoSeleccionado = filtroCatalogoTipo;
   let visibles = 0;
   listaCatalogo.innerHTML = '';
 
   recursos.forEach((recurso) => {
     const tarjeta = crearTarjetaRecurso(recurso);
     const coincideTexto = !texto || tarjeta.dataset.texto.includes(texto);
-    const coincideTipo = !tipoSeleccionado || recurso.tipo === tipoSeleccionado;
-    const coincideEstado = !estadoSeleccionado || recurso.estado === estadoSeleccionado;
-    if(coincideTexto && coincideTipo && coincideEstado){
+    const coincideTipo = !tipoSeleccionado || tipoSeleccionado === 'todos' || recurso.tipo === tipoSeleccionado;
+    if(coincideTexto && coincideTipo){
       listaCatalogo.appendChild(tarjeta);
       visibles += 1;
     }
@@ -171,13 +167,13 @@ function renderizarCatalogo(){
   contadorCatalogo.textContent = visibles === 1 ? 'Mostrando 1 recurso bibliográfico.' : `Mostrando ${visibles} recursos bibliográficos.`;
   estadoCatalogo.hidden = visibles > 0;
   if(visibles === 0){
-    estadoCatalogo.textContent = 'No se encontraron recursos con esos criterios. Prueba con otra palabra, cambia el tipo o limpia los filtros.';
+    estadoCatalogo.textContent = 'No se encontraron recursos con esa búsqueda. Prueba con otra palabra o cambia el tipo de búsqueda principal.';
   }
 }
 
 async function cargarCatalogo(){
   try{
-    const respuesta = await fetch('datos/recursos.json?v=3');
+    const respuesta = await fetch('datos/recursos.json?v=4');
     if(!respuesta.ok){throw new Error('No se pudo cargar el archivo de datos.');}
     recursos = await respuesta.json();
     estadoCatalogo.hidden = true;
@@ -323,9 +319,8 @@ function ejecutarBusquedaPrincipal(evento){
   evento.preventDefault();
   const texto = busquedaPrincipal.value.trim();
   const tipo = tipoPrincipal.value;
-  busquedaCatalogo.value = texto;
-  tipoCatalogo.value = tipo === 'todos' || tipo === 'externos' ? '' : tipo;
-  estadoCatalogoSelect.value = '';
+  filtroCatalogoTexto = texto;
+  filtroCatalogoTipo = tipo === 'externos' ? '' : tipo;
   renderizarCatalogo();
 
   if(tipo === 'externos' || tipo === 'libros'){
@@ -347,16 +342,6 @@ atajosBusqueda.forEach((boton) => {
   });
 });
 tabs.forEach((tab) => tab.addEventListener('click', () => cambiarTab(tab.dataset.tab)));
-busquedaCatalogo.addEventListener('input', renderizarCatalogo);
-tipoCatalogo.addEventListener('change', renderizarCatalogo);
-estadoCatalogoSelect.addEventListener('change', renderizarCatalogo);
-limpiarCatalogo.addEventListener('click', () => {
-  busquedaCatalogo.value = '';
-  tipoCatalogo.value = '';
-  estadoCatalogoSelect.value = '';
-  renderizarCatalogo();
-  busquedaCatalogo.focus();
-});
 formGutendex.addEventListener('submit', buscarGutendex);
 sugerenciasGutendex.forEach((boton) => {
   boton.addEventListener('click', () => {
