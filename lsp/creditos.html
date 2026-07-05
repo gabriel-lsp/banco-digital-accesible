@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Créditos, fuente y condiciones de uso del módulo de Lengua de Señas Peruana dentro del Banco Digital Accesible.">
   <title>Créditos | Lengua de Señas Peruana</title>
-  <link rel="stylesheet" href="../estilos.css?v=5">
+  <link rel="stylesheet" href="estilos.css?v=18">
+  <link rel="stylesheet" href="cabecera-bda.css?v=5">
   <style>
     .patron-portada{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background-image:url("../patron-shipibo.webp");background-repeat:repeat;background-size:cover;background-position:center;opacity:.30;filter:saturate(1.15) contrast(1.08);}
     .cabecera{padding:30px 18px 145px;}
@@ -24,19 +25,18 @@
     .etiqueta{margin:0 0 14px;color:#c9f7ee;font-size:.86rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;}
     .portada h1{max-width:900px;margin:0 0 22px;color:#ffffff;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.5rem,5.8vw,4.15rem);line-height:1.04;letter-spacing:-.04em;}
     .subtitulo{max-width:880px;margin:0;color:rgba(255,255,255,.96);font-size:1.22rem;line-height:1.65;}
-    main{max-width:1120px;margin:-78px auto 0;padding:0 18px 44px;position:relative;z-index:2;}
-    .tarjeta-creditos{background:#ffffff;border:1px solid #d9e2ec;border-radius:26px;box-shadow:0 18px 42px rgba(16,42,67,.16);padding:34px 46px 40px;}
-    .tarjeta-creditos .seccion-etiqueta{margin:0 0 14px;color:#0f766e;font-size:.86rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;}
-    .tarjeta-creditos h1{margin:0 0 16px;color:#072f57;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.9rem,3.6vw,2.65rem);line-height:1.1;}
-    .tarjeta-creditos .introduccion{max-width:860px;margin:0 0 28px;color:#486581;line-height:1.7;font-size:1rem;}
-    .tarjeta-creditos section{background:#ffffff;border:1px solid #d9e2ec;border-radius:22px;padding:24px;margin-top:18px;box-shadow:0 10px 22px rgba(16,42,67,.06);}
+    .contenido-creditos{max-width:1120px;margin:-78px auto 0;padding:0 18px 44px;position:relative;z-index:2;}
+    .tarjeta-creditos{background:#ffffff;border:1px solid var(--borde);border-radius:var(--radio);box-shadow:var(--sombra);padding:34px 46px 40px;}
+    .tarjeta-creditos .seccion-etiqueta{margin:0 0 14px;color:var(--verde-700);font-size:.86rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;}
+    .tarjeta-creditos h1{margin:0 0 16px;color:var(--azul-900);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.9rem,3.6vw,2.65rem);line-height:1.1;}
+    .tarjeta-creditos .introduccion{max-width:860px;margin:0 0 28px;color:var(--texto-suave);line-height:1.7;font-size:1rem;}
+    .tarjeta-creditos section{background:#ffffff;border:1px solid var(--borde);border-radius:22px;padding:24px;margin-top:18px;box-shadow:0 10px 22px rgba(16,42,67,.06);}
     .tarjeta-creditos h2{margin:0 0 10px;color:#0b2f4a;font-size:1.15rem;line-height:1.3;}
-    .tarjeta-creditos p{color:#486581;line-height:1.7;}
+    .tarjeta-creditos p{color:var(--texto-suave);line-height:1.7;}
     .acciones-informativas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
-    .boton-secundario-info{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid #0f766e;color:#0f766e;text-decoration:none;font-weight:800;background:#ffffff;}
-    .boton-secundario-info:hover{background:#e6f4f1;color:#0b4f4a;}
-    .footer-contenido{grid-template-columns:1.2fr 1fr 1.25fr;gap:32px;}
-    @media (max-width:700px){.cabecera{padding:26px 18px 116px;}.navegacion{align-items:flex-start;flex-direction:column;}.portada{margin-top:54px;}.marca-institucional{align-items:flex-start;}.marca-logo-superior{width:52px;height:52px;border-radius:16px;}.marca-texto-superior{padding-left:12px;}.marca-nombre-institucional{font-size:.94rem;}.marca-detalle-institucional{font-size:.82rem;}.enlaces-cabecera{justify-content:flex-start;}.tarjeta-creditos{padding:26px 22px;}.acciones-informativas{flex-direction:column;}.boton-secundario-info{width:100%;}.footer-contenido{grid-template-columns:1fr;}}
+    .boton-secundario-info{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--verde-700);color:var(--verde-700);text-decoration:none;font-weight:800;background:#ffffff;}
+    .boton-secundario-info:hover{background:var(--verde-100);color:#0b4f4a;}
+    @media (max-width:700px){.cabecera{padding:26px 18px 116px;}.navegacion{align-items:flex-start;flex-direction:column;}.portada{margin-top:54px;}.marca-institucional{align-items:flex-start;}.marca-logo-superior{width:52px;height:52px;border-radius:16px;}.marca-texto-superior{padding-left:12px;}.marca-nombre-institucional{font-size:.94rem;}.marca-detalle-institucional{font-size:.82rem;}.enlaces-cabecera{justify-content:flex-start;}.tarjeta-creditos{padding:26px 22px;}.acciones-informativas{flex-direction:column;}.boton-secundario-info{width:100%;}}
   </style>
 </head>
 <body class="pagina-creditos">
@@ -70,57 +70,41 @@
     <article class="tarjeta-creditos">
       <p class="seccion-etiqueta">Información específica del módulo</p>
       <h1>Créditos y condiciones de uso del módulo LSP</h1>
-      <p class="introduccion">
-        Este módulo organiza vocabulario visual de Lengua de Señas Peruana como recurso educativo de consulta inicial para la comunidad educativa.
-      </p>
+      <p class="introduccion">Este módulo organiza vocabulario visual de Lengua de Señas Peruana como recurso educativo de consulta inicial para la comunidad educativa.</p>
 
       <section>
         <h2>Organización y adaptación digital</h2>
-        <p>
-          La estructura de navegación, organización del diccionario, clasificación por categorías, presentación visual, buscador, filtros y adaptación web del módulo fueron desarrollados y organizados por Gabriel Berrospi dentro del Banco Digital Accesible.
-        </p>
+        <p>La estructura de navegación, organización del diccionario, clasificación por categorías, presentación visual, buscador, filtros y adaptación web del módulo fueron desarrollados y organizados por Gabriel Berrospi dentro del Banco Digital Accesible.</p>
       </section>
 
       <section>
         <h2>Fuente principal del contenido LSP</h2>
-        <p>
-          Fuente de referencia: Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana. El vocabulario, las imágenes de señas y las descripciones asociadas se presentan como material de consulta educativa, conservando la referencia institucional de procedencia.
-        </p>
+        <p>Fuente de referencia: Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana. El vocabulario, las imágenes de señas y las descripciones asociadas se presentan como material de consulta educativa, conservando la referencia institucional de procedencia.</p>
       </section>
 
       <section>
         <h2>Procedencia y tipo de recurso</h2>
-        <p>
-          Tipo de recurso integrado: banco visual de vocabulario de Lengua de Señas Peruana. Procedencia: material de referencia educativa del Ministerio de Educación del Perú, organizado digitalmente para facilitar su consulta por palabra, categoría e imagen dentro del módulo LSP.
-        </p>
+        <p>Tipo de recurso integrado: banco visual de vocabulario de Lengua de Señas Peruana. Procedencia: material de referencia educativa del Ministerio de Educación del Perú, organizado digitalmente para facilitar su consulta por palabra, categoría e imagen dentro del módulo LSP.</p>
       </section>
 
       <section>
         <h2>Adaptación realizada</h2>
-        <p>
-          La adaptación realizada consiste en la estructuración del diccionario en formato digital, la organización de categorías, la vinculación de imágenes, la implementación de búsqueda, la presentación en tarjetas y la integración del recurso dentro del Banco Digital Accesible.
-        </p>
+        <p>La adaptación realizada consiste en la estructuración del diccionario en formato digital, la organización de categorías, la vinculación de imágenes, la implementación de búsqueda, la presentación en tarjetas y la integración del recurso dentro del Banco Digital Accesible.</p>
       </section>
 
       <section>
         <h2>Condición de uso</h2>
-        <p>
-          El módulo tiene finalidad educativa, accesible y no comercial. La consulta, reutilización o referencia del material debe conservar la fuente principal, los créditos del proyecto digital y la identificación de cualquier adaptación o modificación realizada.
-        </p>
+        <p>El módulo tiene finalidad educativa, accesible y no comercial. La consulta, reutilización o referencia del material debe conservar la fuente principal, los créditos del proyecto digital y la identificación de cualquier adaptación o modificación realizada.</p>
       </section>
 
       <section>
         <h2>Alcance pedagógico</h2>
-        <p>
-          Este banco no reemplaza la enseñanza formal de la Lengua de Señas Peruana ni el acompañamiento de especialistas competentes. Su función es servir como apoyo visual de consulta, sensibilización y orientación pedagógica inicial.
-        </p>
+        <p>Este banco no reemplaza la enseñanza formal de la Lengua de Señas Peruana ni el acompañamiento de especialistas competentes. Su función es servir como apoyo visual de consulta, sensibilización y orientación pedagógica inicial.</p>
       </section>
 
       <section>
         <h2>Responsabilidad de revisión</h2>
-        <p>
-          Si se identifica una seña, palabra, categoría, imagen o descripción que requiera revisión, debe registrarse la observación indicando el término, la categoría y el detalle a corregir, manteniendo la referencia a la fuente original y al proceso de adaptación digital.
-        </p>
+        <p>Si se identifica una seña, palabra, categoría, imagen o descripción que requiera revisión, debe registrarse la observación indicando el término, la categoría y el detalle a corregir, manteniendo la referencia a la fuente original y al proceso de adaptación digital.</p>
       </section>
 
       <div class="acciones-informativas">
@@ -131,27 +115,27 @@
     </article>
   </main>
 
-  <footer>
-    <div class="footer-contenido">
-      <div class="footer-bloque">
-        <h2>Lengua de Señas Peruana</h2>
+  <footer class="footer-crebe" aria-label="Pie de página institucional">
+    <div class="footer-contenido footer-contenedor">
+      <section class="footer-bloque footer-columna" aria-labelledby="titulo-footer-descripcion">
+        <h2 id="titulo-footer-descripcion">Lengua de Señas Peruana</h2>
         <p>Recurso visual de apoyo para la consulta educativa de señas organizadas por palabra y categoría.</p>
-      </div>
+      </section>
 
-      <div class="footer-bloque">
-        <h2>Enlaces</h2>
+      <nav class="footer-bloque footer-columna" aria-labelledby="titulo-footer-enlaces">
+        <h2 id="titulo-footer-enlaces">Enlaces</h2>
         <p>
           <a href="../index.html">Banco Digital Accesible</a><br>
           <a href="index.html">Inicio LSP</a><br>
           <a href="faq.html">Preguntas frecuentes</a><br>
           <a href="accesibilidad.html">Accesibilidad LSP</a>
         </p>
-      </div>
+      </nav>
 
-      <div class="footer-bloque">
-        <h2>Contacto</h2>
+      <section class="footer-bloque footer-columna contacto-footer" aria-labelledby="titulo-footer-contacto">
+        <h2 id="titulo-footer-contacto">Contacto</h2>
         <p><a href="https://gabriel-lsp.github.io/accesos-complementarios/paginas/contacto.html">Contacto Institucional</a></p>
-      </div>
+      </section>
     </div>
 
     <div class="footer-final">
