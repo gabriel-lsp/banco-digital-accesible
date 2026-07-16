@@ -150,7 +150,7 @@ function filtrar() {
   if (secuenciaActiva) {
     resultados = bancoSecuencias
       .filter((item) => item.categoria === secuenciaActiva)
-      .sort(comparPorSecuencia);
+      .sort(compararPorSecuencia);
     return;
   }
 
