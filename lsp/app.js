@@ -1,11 +1,9 @@
 "use strict";
 
-const BASE_ORIGINAL = "https://crebe-ucayali.github.io/banco-digital-lsp/";
 const BASE_BDA = "https://crebe-ucayali.github.io/banco-digital-accesible/lsp/";
 const RUTAS = [
-  { url: BASE_ORIGINAL + "datos/diccionario_lsp.json", base: BASE_ORIGINAL },
-  { url: "datos/diccionario_lsp.json", base: BASE_BDA },
-  { url: BASE_BDA + "datos/diccionario_lsp.json", base: BASE_BDA }
+  { url: "diccionario_lsp.json", base: BASE_BDA },
+  { url: BASE_BDA + "diccionario_lsp.json", base: BASE_BDA }
 ];
 
 const SECUENCIAS = {
@@ -42,7 +40,7 @@ let banco = [];
 let bancoSenas = [];
 let bancoSecuencias = [];
 let resultados = [];
-let baseImagenes = BASE_ORIGINAL;
+let baseImagenes = BASE_BDA;
 let visibles = 8;
 let secuenciaActiva = "";
 
@@ -288,7 +286,7 @@ async function cargarDatos() {
 
   console.error(errorFinal);
   elementos.estado.hidden = false;
-  elementos.estado.textContent = "No fue posible cargar el banco original. Se requiere que el repositorio LSP original esté accesible o migrar sus datos e imágenes reales dentro de BDA.";
+  elementos.estado.textContent = "No fue posible cargar el diccionario del Banco Digital Accesible.";
   elementos.contador.textContent = "Datos no disponibles";
   elementos.mostrando.textContent = "";
   elementos.cargarMas.hidden = true;

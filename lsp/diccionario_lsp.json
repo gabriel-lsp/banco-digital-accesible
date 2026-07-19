@@ -1324,7 +1324,7 @@
     "categoria": "alimentos",
     "palabra": "papa",
     "descripcion": "Palma de la mano derecha hacia arriba con los dedos flexionados.",
-    "archivo_imagen": "imagenes/alimentos/papa_p111_t03.png",
+    "archivo_imagen": "imagenes/alimentos/papa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1940,7 +1940,7 @@
     "categoria": "animales",
     "palabra": "araña",
     "descripcion": "Con los dedos semiflexionnados y extendidos realizar movimientos de avance con el índice, medio, anular y meñique",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/araña.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1948,7 +1948,7 @@
     "categoria": "animales",
     "palabra": "buho",
     "descripcion": "Configurar con ambas manos la \"D\" y llevarlas a los ojos con movimientos suaves",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/buho",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1956,7 +1956,7 @@
     "categoria": "animales",
     "palabra": "burro",
     "descripcion": "Colocar la mano derecha en la sien con los dedos indice, medio, anular y mefique semiflexionados excepto el pulgar moviéndolos hacia adelante.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/burro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1964,7 +1964,7 @@
     "categoria": "animales",
     "palabra": "caballo",
     "descripcion": "Con ambas manos con los dedos flexionados excepto el pulgar, a cada lado del tronco realizar movimientos circulares hacia adelante.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/caballo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1972,7 +1972,7 @@
     "categoria": "animales",
     "palabra": "chancho",
     "descripcion": "Apoyar en las fosas los dedos índice y medio juntos y realizar un movimiento hacia arriba.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/chancho.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1980,7 +1980,7 @@
     "categoria": "animales",
     "palabra": "cocodrilo",
     "descripcion": "Con ambas manos unidas a la altura de las muñecas y separadas a nivel de los dedos realizar movimientos de apertura y cierre.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_199_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/cocodrilo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1988,7 +1988,7 @@
     "categoria": "animales",
     "palabra": "concha de mar",
     "descripcion": "1. Colocar ambas manos con los dedos unidos, las muñecas en contacto y la parte central separada. 2.Configurar la seña de mar.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/concha_de_mar.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -1996,7 +1996,7 @@
     "categoria": "animales",
     "palabra": "cóndor",
     "descripcion": "1. colocar delante de la nariz el dorso de la mano derecha con el índice semiflexionado. 2. flexionar los codos y los brazos con mivimiento de aleteo.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/cóndor.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2004,7 +2004,7 @@
     "categoria": "animales",
     "palabra": "conejo",
     "descripcion": "Colocar ambas manos con el dorso hacia afuera, a la altura de la sien. Mover los dedos índice y medio, los demás dedos flexionados.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/conejo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2012,7 +2012,7 @@
     "categoria": "animales",
     "palabra": "culebra",
     "descripcion": "Colocar la mano izquierda a la altura del antebrazo derecho extendiendo el índice en ambas manos. Avanzar con movimientos ondulados.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/culebra.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2020,7 +2020,7 @@
     "categoria": "animales",
     "palabra": "elefante",
     "descripcion": "con las yemas de los dedos a la altura de la boca hacer un movimiento hacia delante (simulando una trompa), uniendo los dedos.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/elefante.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2028,7 +2028,7 @@
     "categoria": "animales",
     "palabra": "gallina",
     "descripcion": "1.Unir y separar los dedos índice y pulgar con movimiento a la altura de la boca. 2. Colocar el pulgar e índice haciendo pinza, sobre la palma de la mano izquierda.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_200_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/gallina.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2036,7 +2036,7 @@
     "categoria": "animales",
     "palabra": "gallo",
     "descripcion": "Llevar la mano con los dedos extendidos en posición vertical sobre la cabeza, con movimiento hacia atrás y hacia adelante.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/gallo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2044,7 +2044,7 @@
     "categoria": "animales",
     "palabra": "gato",
     "descripcion": "Unir las yemas de los dedos índice y pulgar, los demás dedos extendidos llevarlos sobre el labio superior realizando movimientos hacia afuera.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/gato.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2052,7 +2052,7 @@
     "categoria": "animales",
     "palabra": "gusano",
     "descripcion": "Apoyar el índice semiflexionado de la mano derecha, sobre el dorso de la mano izquierda, con movimiento de avance hacia el antebrazo",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/gusano.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2060,7 +2060,7 @@
     "categoria": "animales",
     "palabra": "jirafa",
     "descripcion": "Llevar los dedos semiflexionados de la mano derecha hacia el cuello y realizar un movimiento recto hacia arriba.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/jirafa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2068,7 +2068,7 @@
     "categoria": "animales",
     "palabra": "león",
     "descripcion": "Con los dedos extendidos de la mano derecha, colocada en la parte central de la cabeza realizar un movimiento hacia atrás con los dedos.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/león.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2076,7 +2076,7 @@
     "categoria": "animales",
     "palabra": "llama",
     "descripcion": "Uniendo los dedos anular, medio y pulgar, los otros dedos extendidos, realizar ligeros movimientos.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_201_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/llama.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2084,7 +2084,7 @@
     "categoria": "animales",
     "palabra": "loro",
     "descripcion": "Llevar hacia la nariz en índice derecho semiflexionado, la cara palmar de mano hacia afuera.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/loro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2092,7 +2092,7 @@
     "categoria": "animales",
     "palabra": "mariposa",
     "descripcion": "Cruzar las manos con las palmas hacia adentro entrelazando los pulgare, efectuar movimiendos con los dedos",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/mariposa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2100,7 +2100,7 @@
     "categoria": "animales",
     "palabra": "mono",
     "descripcion": "Colocar en la cabeza la mano derecha y el pecho la mano izquierda, hacer movimientos con los dedos.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/mono.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2108,7 +2108,7 @@
     "categoria": "animales",
     "palabra": "mosca",
     "descripcion": "Unir índice y pulgar de la mano derecha, los demás dedos extendidos y efectuar un movimiento ondulatorio hacia la derecha.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/mosca.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2116,7 +2116,7 @@
     "categoria": "animales",
     "palabra": "oso",
     "descripcion": "Cruzando los brazos sobre el pecho ejecutar movimientos con todos los dedos.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/oso.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2124,7 +2124,7 @@
     "categoria": "animales",
     "palabra": "oveja",
     "descripcion": "Apoyar el dorso de los dedos índice y medio extendidos y recorrer desde la muñeca hasta el antebrazo",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_202_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/oveja.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2132,7 +2132,7 @@
     "categoria": "animales",
     "palabra": "pájaro",
     "descripcion": "1.Unir y separar con movimientos el índice y pulgar de la mano derecha, a la altura de los labios. 2. Flexionando los codos extender las manos hacia los lados realizando movimiento de aleteo.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/pájaro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2140,7 +2140,7 @@
     "categoria": "animales",
     "palabra": "pato",
     "descripcion": "Con los dedos pulgar e índice a la altura de la naríz, realizar un movimiento hacia abajo.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/pato.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2148,7 +2148,7 @@
     "categoria": "animales",
     "palabra": "pavo",
     "descripcion": "Con los dedos pulgar e índice a la altura de la nariz, realizar un movimiento hacia abajo",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/pavo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2156,7 +2156,7 @@
     "categoria": "animales",
     "palabra": "perro",
     "descripcion": "1. Chasquear los dedos. 2. Golpear suavemente la pierna con la mano deracha.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/perro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2164,7 +2164,7 @@
     "categoria": "animales",
     "palabra": "pescado",
     "descripcion": "Colocar la mano derecha con los dedos hacia adelante, realizar un movimiento ondulario con la mano.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/pescado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2172,7 +2172,7 @@
     "categoria": "animales",
     "palabra": "pollo",
     "descripcion": "Unir y separar los dedos índice y pulgar delante de la boca.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_203_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/pollo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2180,7 +2180,7 @@
     "categoria": "animales",
     "palabra": "sapo",
     "descripcion": "Palma derecha ahuecada sobre la palma de la mano izquierda, con movimientos de salto",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_01.png",
+    "archivo_imagen": "imagenes/animales/sapo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2188,7 +2188,7 @@
     "categoria": "animales",
     "palabra": "toro",
     "descripcion": "Apoyando los pulgares en la sien, el dedo índice extendido, los demás dedos flexionados sobre la palma, llevar la cabeza hacia adelante.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_02.png",
+    "archivo_imagen": "imagenes/animales/toro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2196,7 +2196,7 @@
     "categoria": "animales",
     "palabra": "tortuga",
     "descripcion": "Cubrir el dorso de la mano izquierda flexionada con la palma de la mano derecha dejando libre el pulgar izquierda en movimiento.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_03.png",
+    "archivo_imagen": "imagenes/animales/tortuga.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2204,7 +2204,7 @@
     "categoria": "animales",
     "palabra": "Vaca",
     "descripcion": "Configurar \"Y\" con ambas manos, apoyar los pulgares extendidos en la sien, realizar un pequeño movimiento hacia arriba.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_04.png",
+    "archivo_imagen": "imagenes/animales/Vaca.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2212,7 +2212,7 @@
     "categoria": "animales",
     "palabra": "zancudo",
     "descripcion": "Uniendo los dedos pulgar e índice de la mano derecha, llevarlos sobre el dorso del puño de la mano izquierda con movimiento de arriba hacia abajo.",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_05.png",
+    "archivo_imagen": "imagenes/animales/zancudo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2220,7 +2220,7 @@
     "categoria": "animales",
     "palabra": "zorro",
     "descripcion": "1. Con la mano derecha abierta sobre la cara, realizar un movimiento hacia afuera, uniendo los dedos. 2. Configurar la letra \"Z\".",
-    "archivo_imagen": "imagenes/animales/revisar_pagina_204_tarjeta_06.png",
+    "archivo_imagen": "imagenes/animales/zorro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
