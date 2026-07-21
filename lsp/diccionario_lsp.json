@@ -4412,7 +4412,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "América del sur",
     "descripcion": "1.Seña de América. 2.Configurar \"S\".",
-    "archivo_imagen": "imagenes/paises_y_ciudades/américa_del_sur.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/america_del_sur.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4420,7 +4420,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "África",
     "descripcion": "Con la palma de la mano derecha extendida y el dedo medio flexionado, realizar un movimiento circular delante del rostro.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/áfrica.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/africa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4436,7 +4436,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "Oceanía",
     "descripcion": "Con cuatro dedos extendidos de la mano derecha a la altura del hombro derecho, realizar un movimiento ondulatorio.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/oceanía.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/oceania.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4508,7 +4508,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "colombia",
     "descripcion": "Configurar \"C\" con la mano derecha, realizando movimientos giratorios.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/Colombia.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/colombia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4556,7 +4556,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "Estados Unidos",
     "descripcion": "Formar la \"U\" del alfabeto con la mano derecha, realizar un movimiento de vaivén de derecha a izquierda.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/estados unidos.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/estados_unidos.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4900,7 +4900,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "San Martín de Porres",
     "descripcion": "1.Configurar seña de color negro. 2.Simular acción de barrer.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/san_martín_de_porres.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/san_martin_de_porres.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4924,7 +4924,7 @@
     "categoria": "paises_y_ciudades",
     "palabra": "Villa el Salvador",
     "descripcion": "Con la mano derecha configurar las letras V y S.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/illa_el_salvador.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/villa_el_salvador.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
