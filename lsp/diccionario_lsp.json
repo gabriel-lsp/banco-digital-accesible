@@ -4402,33 +4402,33 @@
   {
     "id": "LSP-000555",
     "categoria": "paises_y_ciudades",
-    "palabra": "américa",
+    "palabra": "América",
     "descripcion": "Entrelazar dedos de ambas manos y realizar un movimiento circular.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/america.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000556",
     "categoria": "paises_y_ciudades",
-    "palabra": "américa del sur",
+    "palabra": "América del sur",
     "descripcion": "1.Seña de América. 2.Configurar \"S\".",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/america_del_sur.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000557",
     "categoria": "paises_y_ciudades",
-    "palabra": "áfrica",
+    "palabra": "África",
     "descripcion": "Con la palma de la mano derecha extendida y el dedo medio flexionado, realizar un movimiento circular delante del rostro.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/áfrica.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000558",
     "categoria": "paises_y_ciudades",
-    "palabra": "asia",
+    "palabra": "Ásia",
     "descripcion": "Configurar \"A\" y hacer un círculo completo alrededor del rostro, comenzando en el mentón.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/ásia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -4436,31 +4436,31 @@
     "categoria": "paises_y_ciudades",
     "palabra": "oceanía",
     "descripcion": "Con cuatro dedos extendidos de la mano derecha a la altura del hombro derecho, realizar un movimiento ondulatorio.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/Oceanía.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000560",
     "categoria": "paises_y_ciudades",
-    "palabra": "europa",
+    "palabra": "Europa",
     "descripcion": "Configurar \"E\" a la altura de la nariz, efectuar un movimiento circular alrededor del rostro, regresando al mismo punto.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_221_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/europa.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000561",
     "categoria": "paises_y_ciudades",
-    "palabra": "alemania",
+    "palabra": "Alemania",
     "descripcion": "Colocar en la frente el dorso de la mano derecha con el índice extendido, los demás dedos flexionados.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_222_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/alemania.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000562",
     "categoria": "paises_y_ciudades",
-    "palabra": "argentina",
+    "palabra": "Argentina",
     "descripcion": "Con la mano derecha semiflexionada, realizar pequeños movimientos a la altura del hombro derecho.",
-    "archivo_imagen": "imagenes/paises_y_ciudades/revisar_pagina_222_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_ciudades/argentina.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
