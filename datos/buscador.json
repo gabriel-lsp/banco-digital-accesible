@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bda-inicio",
+    "titulo": "Banco Digital Accesible",
+    "modulo": "BDA",
+    "categoria": "Accesibilidad",
+    "tipo": "Módulo",
+    "descripcion": "Entrada principal a recursos de Lengua de Señas Peruana, Sistema Braille y Biblioteca Accesible.",
+    "etiquetas": ["banco digital", "accesible", "lsp", "braille", "biblioteca"],
+    "url": "https://crebe-ucayali.github.io/banco-digital-accesible/",
+    "fechaActualizacion": "2026-07-23"
+  },
+  {
+    "id": "bda-lsp",
+    "titulo": "Lengua de Señas Peruana",
+    "modulo": "BDA",
+    "categoria": "Lengua de Señas Peruana",
+    "tipo": "Banco visual",
+    "descripcion": "Consulta señas organizadas por palabra y categoría para docentes, familias y estudiantes.",
+    "etiquetas": ["lsp", "señas", "persona sorda", "comunicacion"],
+    "url": "https://crebe-ucayali.github.io/banco-digital-accesible/lsp/",
+    "fechaActualizacion": "2026-07-23"
+  },
+  {
+    "id": "bda-braille",
+    "titulo": "Sistema Braille",
+    "modulo": "BDA",
+    "categoria": "Braille",
+    "tipo": "Banco educativo",
+    "descripcion": "Recursos digitales sobre el sistema Braille, reconocimiento visual y materiales de apoyo.",
+    "etiquetas": ["braille", "celda braille", "puntos", "discapacidad visual"],
+    "url": "https://crebe-ucayali.github.io/banco-digital-accesible/braille/",
+    "fechaActualizacion": "2026-07-23"
+  },
+  {
+    "id": "bda-biblioteca",
+    "titulo": "Biblioteca Accesible",
+    "modulo": "BDA",
+    "categoria": "Biblioteca",
+    "tipo": "Repositorio de consulta",
+    "descripcion": "Libros digitales, bases académicas, repositorios abiertos y accesos de consulta educativa.",
+    "etiquetas": ["libros", "biblioteca", "repositorios", "investigacion"],
+    "url": "https://crebe-ucayali.github.io/banco-digital-accesible/biblioteca/",
+    "fechaActualizacion": "2026-07-23"
+  }
+]
